@@ -1,17 +1,71 @@
 /* --- Global --- */
+html, .container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("/static/assets/Background.png");
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;  
 }
 h1 {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 2.5rem;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.15rem;
 }
 
 .subtitle {
-    font-size: 16px;
     display: block;
+
+    font-size: 1.2rem;
 }
 
+.break {
+  margin-left:-100%;
+  margin-right:-100%;
+}
 
+.centeredBlock {
+  padding: 50px 30px;
+  text-align: center;
+}
 
 /* Hero */
+.hero {
+  padding: 60px 40px;
+
+  min-height: 300px;
+  background-image: url("/static/assets/HeroGrass.png"), linear-gradient(to top right, #63B0DC, #A6E3FF);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.mission {
+  color: white;
+  background-color: #6C4D40;
+}
+
+.about {
+  background-image: url("/static/assets/About.jpg");
+  background-size: cover;
+}
+
+.serve {
+  color: white;
+  background-color: #4D9B4D;
+}
