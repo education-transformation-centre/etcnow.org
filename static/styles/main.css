@@ -20,19 +20,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 h2 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.0rem;
 }
 h3 {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 
 .subtitle {
@@ -51,7 +51,7 @@ p {
 }
 
 .centeredBlock {
-  padding: 50px 30px;
+  padding: calc(5vw + 20px) 10vw;
   text-align: center;
 }
 
@@ -62,8 +62,11 @@ p + p {
 /* Hero */
 .hero {
   padding: 60px 40px;
+  padding-top: calc(8vw + 15px);
 
   min-height: 300px;
+  height: 30vw;
+
   background-image: url("/static/assets/HeroGrass.png"), linear-gradient(to top right, #63B0DC, #A6E3FF);
   background-size: 100% auto;
   background-position: bottom;
@@ -102,7 +105,7 @@ p + p {
 }
 
 .testimonials ul {
-  padding: 30px;
+  padding: calc(2vw + 10px);
 }
 
 .testimonials .author {
@@ -114,6 +117,7 @@ p + p {
 
 .testimonials .position {
   display: block;
+  line-height: 1.2rem;
 
   font-size: 1rem;
 }
