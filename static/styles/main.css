@@ -4,6 +4,13 @@ html, .container-fluid {
   padding: 0px;
 }
 
+ul {
+  margin: 0px;
+  padding: 0px;
+
+  list-style: none;
+}
+
 body {
   background-image: url("/static/assets/Background.png");
 }
@@ -39,9 +46,17 @@ p {
   margin-right:-100%;
 }
 
+.center {
+  text-align: center;
+}
+
 .centeredBlock {
   padding: 50px 30px;
   text-align: center;
+}
+
+p + p {
+  text-indent: 3rem;
 }
 
 /* Hero */
@@ -68,4 +83,46 @@ p {
 .serve {
   color: white;
   background-color: #4D9B4D;
+}
+
+.testimonials {
+  padding: 50px 30px;
+}
+
+.testimonials i {
+  display: inline;
+  padding-right: 8px;
+
+  color: #404040;
+  font-size: 35px;
+}
+
+.testimonials p {
+  
+}
+
+.testimonials ul {
+  padding: 30px;
+}
+
+.testimonials .author {
+  display: block;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.testimonials .position {
+  display: block;
+
+  font-size: 1rem;
+}
+
+.contact {
+  color: white;
+  background-color: #6C4D40;
+}
+
+.contact a {
+  display: block;
 }
