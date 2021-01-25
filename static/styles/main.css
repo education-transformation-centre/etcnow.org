@@ -110,7 +110,7 @@ p + p {
   justify-content: center;
   align-items: center;
 
-  padding: 10px;
+  padding: 20px;
   height: 7vh;
 
   background-color: var(--super-light-grey, white);
