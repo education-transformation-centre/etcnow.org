@@ -1,0 +1,74 @@
+.hero {
+  display: flex;
+  align-items: center;
+
+  padding: 60px 40px;
+  padding-top: calc(8vw + 15px);
+
+  min-height: 300px;
+  height: 30vw;
+
+  background-image: url("/static/assets/HeroGrass.png"),
+    linear-gradient(to top right, #63b0dc, #a6e3ff);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  margin-bottom: 13vw;
+}
+
+.mission {
+  color: white;
+  background-color: #6c4d40;
+}
+
+.about {
+  background-image: url("/static/assets/About.jpg");
+  background-size: cover;
+}
+
+.serve {
+  color: white;
+  background-color: #4d9b4d;
+}
+
+.testimonials {
+  padding: 50px 30px;
+}
+
+.testimonials i {
+  display: inline;
+  padding-right: 8px;
+
+  color: #404040;
+  font-size: 35px;
+}
+
+.testimonials ul {
+  padding: calc(2vw + 10px);
+}
+
+.testimonials .author {
+  display: block;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.testimonials .position {
+  display: block;
+  line-height: 1.2rem;
+
+  font-size: 1rem;
+}
+
+.contact {
+  color: white;
+  background-color: #6c4d40;
+}
+
+.contact a {
+  display: block;
+}
