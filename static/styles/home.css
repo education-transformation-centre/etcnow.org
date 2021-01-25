@@ -35,7 +35,7 @@
 }
 
 .testimonials {
-  padding: 50px 30px;
+  padding: 30px 30px;
 }
 
 .testimonials i {
@@ -47,26 +47,32 @@
 }
 
 .testimonials ul {
-  padding: calc(2vw + 10px);
+  padding: 10px;
 }
 
 .testimonials .author {
   display: block;
+  margin-bottom: 5px;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .testimonials .position {
   display: block;
-  line-height: 1.2rem;
 
   font-size: 1rem;
+  line-height: 1.1rem;
 }
 
 .contact {
   color: white;
   background-color: #6c4d40;
+}
+
+.contact h3 {
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
 }
 
 .contact a {

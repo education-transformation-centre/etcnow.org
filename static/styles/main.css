@@ -78,7 +78,7 @@ p {
 }
 
 .centered-block {
-  padding: calc(5vw + 20px) 10vw;
+  padding: calc(3vw + 30px) calc(5vw + 10px);
   text-align: center;
 }
 
