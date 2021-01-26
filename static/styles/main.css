@@ -63,6 +63,10 @@ p {
     font-size: 1.2rem;
 }
 
+p + p {
+    text-indent: 3rem;
+}
+
 .subtitle {
     display: block;
     font-weight: 500;
@@ -89,10 +93,6 @@ p {
 
 .grow:hover {
     transform: scale(1.05);
-}
-
-p + p {
-    text-indent: 3rem;
 }
 
 .btn {
