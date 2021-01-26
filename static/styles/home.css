@@ -20,12 +20,14 @@
 .testimonials ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
 }
 
 .testimonials li {
+    padding: 0px 20px;
     margin-bottom: 40px;
-    flex: 1 1 300px;
+    flex: 1 1 350px;
 }
 
 .testimonials i {
