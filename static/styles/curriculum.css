@@ -1,0 +1,24 @@
+/* -- Custom Icons Styles -- */
+img.icon {
+    display: inline;
+    width: 30px;
+    height: 30px;
+}
+
+img.icon + h2 {
+    display: inline;
+    margin: 0px;
+}
+
+.section {
+    padding-top: 25px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+}
+
+.section-title .icon {
+    margin-right: 8px;
+}
