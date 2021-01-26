@@ -95,6 +95,11 @@ p + p {
     text-align: center;
 }
 
+.centered-block p {
+    max-width: calc(100px + 50vw);
+    margin: auto;
+}
+
 .grow {
     transition: all 0.2s ease-in-out;
 }
