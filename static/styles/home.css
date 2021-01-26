@@ -38,16 +38,31 @@
     padding: 30px 30px;
 }
 
-.testimonials i {
-    display: inline;
-    padding-right: 8px;
-
-    color: #404040;
-    font-size: 35px;
+.testimonials ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
-.testimonials ul {
-    padding: 10px;
+.testimonials li {
+    margin-bottom: 40px;
+    flex: 1 1 300px;
+}
+
+.testimonials i {
+    display: block;
+
+    color: var(--light-grey);
+    font-size: 55px;
+}
+
+.testimonials p {
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+.testimonials p + p {
+    text-indent: 3rem;
 }
 
 .testimonials .author {
