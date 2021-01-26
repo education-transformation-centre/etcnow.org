@@ -144,7 +144,9 @@ p + p {
     display: flex;
     align-items: center;
 
-    padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
 
     min-height: 100px;
 
@@ -156,5 +158,6 @@ p + p {
 }
 
 .hero-container {
-    margin-bottom: 30px;
+    margin-top: 4vw;
+    margin-bottom: 10vw;
 }
