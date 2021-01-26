@@ -25,7 +25,7 @@
 }
 
 .about {
-    background-image: url("/static/assets/About.jpg");
+    background-image: url("/static/assets/about.png");
     background-size: cover;
 }
 
