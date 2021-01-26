@@ -93,7 +93,7 @@ p + p {
 }
 
 .centered-block {
-    padding: calc(5vw + 30px) calc(5vw + 10px);
+    padding: calc(0vw + 30px) calc(5vw + 10px);
     text-align: center;
 }
 
@@ -104,6 +104,10 @@ p + p {
 .centered-block p {
     max-width: calc(100px + 50vw);
     margin: auto;
+}
+
+.large-spacing {
+    padding: calc(6vw + 30px) calc(5vw + 10px);
 }
 
 .grow {
