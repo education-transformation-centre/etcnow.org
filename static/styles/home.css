@@ -21,16 +21,9 @@
     padding: 30px 30px;
 }
 
-.testimonials ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .testimonials li {
     padding: 0px 20px;
-    margin-bottom: 40px;
-    flex: 1 1 100%;
+    margin: 50px auto;
     max-width: 700px;
 }
 
