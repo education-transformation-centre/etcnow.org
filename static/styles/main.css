@@ -65,7 +65,7 @@ a {
 p {
     font-size: 1.2rem;
     line-height: 1.6rem;
-    overflow: auto;
+    word-wrap: break-word;
 }
 
 p + p {
