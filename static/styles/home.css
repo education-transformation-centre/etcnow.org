@@ -2,6 +2,10 @@
     margin-bottom: -1px;
 }
 
+.hero h1 {
+    font-size: 2.0rem;
+}
+
 .mission {
     color: white;
     background-color: #6c4d40;
@@ -70,4 +74,23 @@
 
 .contact a {
     display: block;
+}
+
+
+@media screen and (min-width: 350px) {
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
 }
