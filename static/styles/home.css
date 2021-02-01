@@ -76,8 +76,13 @@
     padding: 0px 0px 15px 0px;
 }
 
-.contact a {
+.contact span {
     display: block;
+    margin-bottom: 8px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 350px) {
