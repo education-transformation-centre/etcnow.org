@@ -98,7 +98,12 @@ p + p {
     text-align: center;
 }
 
-.centered-block h1, .centered-block h2, .centered-block h3, .centered-block h4, .centered-block h5, .centered-block h6 {
+.centered-block h1,
+.centered-block h2,
+.centered-block h3,
+.centered-block h4,
+.centered-block h5,
+.centered-block h6 {
     margin-top: 0px;
 }
 
