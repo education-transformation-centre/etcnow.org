@@ -74,6 +74,10 @@ p + p {
     text-indent: 3rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 .content {
     margin: auto;
     width: 90%;
@@ -148,18 +152,26 @@ p + p {
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
-    height: 7vh;
+    padding: 20px 0px;
+    height: 80px;
 
     background-color: var(--super-light-grey, white);
 }
 
-.navbar .brand {
+.navbar .content {
+    margin: auto;
+    width: 80%;
+    height: 100%;
     font-family: var(--main-font, sans-serif);
     font-size: 1.3rem;
     font-weight: 800;
     text-decoration: none;
     color: inherit;
+    text-align: center;
+}
+
+.navbar .content img {
+    height: 100%;
 }
 
 /* Hero */
@@ -223,7 +235,17 @@ p + p {
     border-bottom: 3px solid var(--white, white);
 }
 
+@media screen and (min-width: 700px) {
+    .navbar .content {
+        text-align: unset;
+    }
+}
+
 @media screen and (min-width: 800px) {
+    .navbar {
+        justify-content: left;
+    }
+
     h1 {
         font-size: 4rem;
     }
