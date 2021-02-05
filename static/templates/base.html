@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-VJ5YQ51QFJ"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-VJ5YQ51QFJ");
+        </script>
+        
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title %}{% endblock %}</title>
@@ -20,7 +35,11 @@
     </head>
     <body>
         <nav class="navbar">
-            <a class="content" href="/"><img src="static/assets/logo.png" alt="Education Transformation Centre Logo"></a>
+            <a class="content" href="/"
+                ><img
+                    src="static/assets/logo.png"
+                    alt="Education Transformation Centre Logo"
+            /></a>
         </nav>
 
         {% block content %}{% endblock %}
@@ -28,11 +47,22 @@
         <div class="footer">
             <div class="section contact">
                 <h2>Contact Us</h2>
-                <span>Email: <a href="mailto:info@etcnow.org">info@etcnow.org</a></span>
-                <span>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></span>
+                <span
+                    >Email:
+                    <a href="mailto:info@etcnow.org">info@etcnow.org</a></span
+                >
+                <span
+                    >Phone: <a href="tel:434-484-0964">(434) 484-0964</a></span
+                >
             </div>
             <div class="section">
-                <p class="center">Education Transformation does not and shall not discriminate on the basis of race, color, religion (creed), gender, gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status, in any of its activities or operations.</p>
+                <p class="center">
+                    Education Transformation does not and shall not discriminate
+                    on the basis of race, color, religion (creed), gender,
+                    gender expression, age, national origin (ancestry),
+                    disability, marital status, sexual orientation, or military
+                    status, in any of its activities or operations.
+                </p>
             </div>
         </div>
     </body>
