@@ -100,6 +100,8 @@ img {
 }
 
 .centered-block {
+    padding: -webkit-calc(0vw + 30px) -webkit-calc(5vw + 10px);
+    padding: -moz-calc(0vw + 30px) -moz-calc(5vw + 10px);
     padding: calc(0vw + 30px) calc(5vw + 10px);
     text-align: center;
 }
@@ -114,20 +116,31 @@ img {
 }
 
 .centered-block p {
+    max-width: -webkit-calc(100px + 50vw);
+    max-width: -moz-calc(100px + 50vw);
     max-width: calc(100px + 50vw);
     margin: auto;
 }
 
 .large-spacing {
+    padding: -webkit-calc(6vw + 30px) -webkit-calc(5vw + 10px);
+    padding: -moz-calc(6vw + 30px) -moz-calc(5vw + 10px);
     padding: calc(6vw + 30px) calc(5vw + 10px);
 }
 
 .grow {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+         -o-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .btn {
@@ -148,9 +161,21 @@ img {
 
 /* Main Navbar */
 .navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     padding: 20px 0px;
     height: 80px;
@@ -176,8 +201,16 @@ img {
 
 /* Hero */
 .hero {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     padding-left: 10%;
     padding-right: 10%;
@@ -186,8 +219,23 @@ img {
     min-height: 100px;
 
     background-image: url("/static/assets/HeroGrass.png"),
+        -webkit-gradient(linear, left bottom, right top, from(#63b0dc), to(#a6e3ff));
+
+    background-image: url("/static/assets/HeroGrass.png"),
+        -webkit-linear-gradient(bottom left, #63b0dc, #a6e3ff);
+
+    background-image: url("/static/assets/HeroGrass.png"),
+        -moz-linear-gradient(bottom left, #63b0dc, #a6e3ff);
+
+    background-image: url("/static/assets/HeroGrass.png"),
+        -o-linear-gradient(bottom left, #63b0dc, #a6e3ff);
+
+    background-image: url("/static/assets/HeroGrass.png"),
         linear-gradient(to top right, #63b0dc, #a6e3ff);
-    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+       -moz-background-size: 100% auto;
+         -o-background-size: 100% auto;
+            background-size: 100% auto;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -243,7 +291,11 @@ img {
 
 @media screen and (min-width: 800px) {
     .navbar {
-        justify-content: left;
+        -webkit-box-pack: left;
+        -webkit-justify-content: left;
+           -moz-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
     }
 
     h1 {

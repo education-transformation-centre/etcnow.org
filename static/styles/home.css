@@ -13,7 +13,10 @@
 
 .about {
     background-image: url("/static/assets/about.png");
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .serve {
@@ -81,7 +84,9 @@
     .testimonials li {
         padding: 40px;
         background-color: rgb(247, 247, 247);
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+           -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     }
 }
 
