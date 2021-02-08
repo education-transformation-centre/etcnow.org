@@ -1,0 +1,17 @@
+.subtitle {
+    margin-top: 10px;
+
+    font-size: 1.5rem;
+}
+
+.super-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 20vh;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 25vh;
+}
