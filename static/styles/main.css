@@ -280,7 +280,6 @@ img {
 
 .footer .contact h2 {
     padding-bottom: 15px;
-    border-bottom: 3px solid var(--white, white);
 }
 
 @media screen and (min-width: 700px) {
