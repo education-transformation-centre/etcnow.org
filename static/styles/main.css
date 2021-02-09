@@ -184,7 +184,7 @@ img {
     height: 80px;
 
     background-color: var(--super-light-grey, white);
-    filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.07));
 }
 
 .navbar .content {
