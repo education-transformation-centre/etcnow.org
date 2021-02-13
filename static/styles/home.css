@@ -1,4 +1,5 @@
 .hero {
+    /* fixes the small gap that sometimes is visible in between the hero and the next section */
     margin-bottom: -1px;
 }
 
@@ -32,10 +33,15 @@
     padding: 30px 30px;
 }
 
+.testimonials figure {
+    margin: 0px;
+    padding: 0px;
+}
+
 .testimonials li {
     padding: 0px 20px;
-    margin: 50px auto;
-    max-width: 700px;
+    margin: 50px auto 100px auto;
+    max-width: 900px;
 }
 
 .testimonials i {
