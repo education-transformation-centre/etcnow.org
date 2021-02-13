@@ -26,22 +26,24 @@
         {% block head %}{% endblock %}
     </head>
     <body>
-        <nav class="navbar">
-            <a class="content" href="/">
-                <img src="static/assets/logo.png" alt="Education Transformation Centre Logo"/>
-            </a>
-        </nav>
+        <header>
+            <nav class="navbar">
+                <a class="content" href="/">
+                    <img src="static/assets/logo.png" alt="Education Transformation Centre Logo"/>
+                </a>
+            </nav>
+        </header>
 
         {% block content %}{% endblock %}
 
-        <div class="footer">
-            <div class="section contact">
+        <footer class="footer">
+            <section class="section contact">
                 <h2>Contact Us</h2>
                 <span>Email:
                     <a href="mailto:info@etcnow.org">info@etcnow.org</a></span>
                 <span>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></span>
-            </div>
-            <div class="section">
+            </section>
+            <section class="section">
                 <p class="center">
                     Education Transformation does not and shall not discriminate
                     on the basis of race, color, religion (creed), gender,
@@ -49,7 +51,7 @@
                     disability, marital status, sexual orientation, or military
                     status, in any of its activities or operations.
                 </p>
-            </div>
-        </div>
+            </section>
+        </footer>
     </body>
 </html>
