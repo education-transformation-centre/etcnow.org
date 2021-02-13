@@ -47,15 +47,15 @@ h6 {
 }
 h1 {
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 h2 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2em;
 }
 h3 {
     font-weight: 600;
-    font-size: 1.9rem;
+    font-size: 1.9em;
     padding: 0px;
 }
 
@@ -65,13 +65,12 @@ a {
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    word-wrap: break-word;
+    font-size: 1.15em;
+    line-height: 1.7em;
 }
 
 p + p {
-    text-indent: 3rem;
+    text-indent: 3em;
 }
 
 img {
@@ -87,7 +86,7 @@ img {
 .subtitle {
     display: block;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.1em;
 }
 
 .break {
@@ -192,7 +191,7 @@ img {
     width: 80%;
     height: 100%;
     font-family: var(--main-font, sans-serif);
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 800;
     text-decoration: none;
     color: inherit;
@@ -264,8 +263,8 @@ img {
 }
 
 .footer p {
-    font-size: 0.9rem;
-    line-height: 1.25rem;
+    font-size: 0.9em;
+    line-height: 1.25em;
 }
 
 .footer a:hover {
@@ -302,10 +301,10 @@ img {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 4em;
     }
 
     .subtitle {
-        font-size: 2rem;
+        font-size: 2em;
     }
 }
