@@ -13,7 +13,7 @@
 }
 
 .about {
-    background-image: url("/static/assets/about.png");
+    background-image: url("/static/assets/about.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
