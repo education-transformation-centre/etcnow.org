@@ -34,3 +34,8 @@ img.icon + h2 {
 .block .title .icon {
     margin-right: 8px;
 }
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
