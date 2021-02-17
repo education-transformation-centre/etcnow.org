@@ -221,10 +221,6 @@ img {
     -ms-flex-align: center;
     align-items: center;
 
-    padding-left: 10%;
-    padding-right: 10%;
-    margin: auto;
-
     min-height: 100px;
 
     background-image: url("/static/assets/HeroGrass.png"),
@@ -250,6 +246,9 @@ img {
 }
 
 .hero-container {
+    width: 90%;
+    max-width: var(--max-width, 1440px);
+    margin: auto;
     margin-top: 10vw;
     margin-bottom: 20vw;
 }
