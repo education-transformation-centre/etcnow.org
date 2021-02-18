@@ -29,8 +29,8 @@
     padding: 40px 60px;
     align-self: center;
     
-    color: white;
-    color: var(--white, white);
+    color: #404040;
+    color: var(--dark-grey, #404040);
     font-size: 1.9em;
     line-height: 2.2em;
     font-size: calc(1.2em + 1.5vw);
