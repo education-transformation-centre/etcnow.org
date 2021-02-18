@@ -94,6 +94,10 @@ img {
     margin-right: -100%;
 }
 
+.bullet {
+    list-style: disc;
+}
+
 .center {
     text-align: center;
 }
@@ -253,6 +257,7 @@ img {
     margin-bottom: 20vw;
 }
 
+
 .footer {
     margin: auto;
     padding: 20px 50px 30px 50px;
@@ -296,7 +301,7 @@ img {
 
 @media screen and (min-width: 700px) {
     .navbar .content {
-        text-align: unset;
+        text-align: left;
     }
 }
 
@@ -316,4 +321,12 @@ img {
     .subtitle {
         font-size: 2em;
     }
+}
+
+/* EI specific rule */
+@media screen and (min-width:0\0) {
+   .navbar .content{
+      margin:none 
+   }
+
 }
