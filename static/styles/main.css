@@ -67,9 +67,6 @@ a {
 p {
     font-size: 1.15em;
     line-height: 1.7em;
-}
-
-p + p {
     text-indent: 3em;
 }
 
