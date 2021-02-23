@@ -88,9 +88,6 @@
 .testimonials p {
     margin: 5px 0px;
     padding: 0px;
-}
-
-.testimonials p + p {
     text-indent: 3rem;
 }
 
