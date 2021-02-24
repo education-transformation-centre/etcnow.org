@@ -50,6 +50,10 @@
     background-size: cover;
 }
 
+.about .section {
+    padding: 30px 10px;
+}
+
 .serve {
     color: white;
     background-color: #4d9b4d;
@@ -61,6 +65,14 @@
 
 .curriculum {
     margin-top: 35px;
+}
+
+.curriculum .section {
+    padding: 30px 10px;
+}
+
+#outcomes-img {
+    margin-top: 70px;
 }
 
 .testimonials {

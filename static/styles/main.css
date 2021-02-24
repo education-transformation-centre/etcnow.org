@@ -44,6 +44,7 @@ h4,
 h5,
 h6 {
     font-family: var(--main-font, sans-serif);
+    margin-top: 0px;
 }
 h1 {
     font-weight: 800;
@@ -52,11 +53,12 @@ h1 {
 h2 {
     font-weight: 700;
     font-size: 2em;
+    margin-bottom: 30px;
 }
 h3 {
-    font-weight: 600;
-    font-size: 1.9em;
     padding: 0px;
+    font-weight: 600;
+    font-size: 1.7em;
 }
 
 a {
@@ -129,15 +131,6 @@ img.medium {
     padding: -moz-calc(0vw + 30px) -moz-calc(5vw + 10px);
     padding: calc(0vw + 30px) calc(5vw + 10px);
     text-align: center;
-}
-
-.centered-block h1,
-.centered-block h2,
-.centered-block h3,
-.centered-block h4,
-.centered-block h5,
-.centered-block h6 {
-    margin-top: 0px;
 }
 
 .centered-block p {
