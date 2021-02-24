@@ -103,6 +103,11 @@ img.center {
     max-width: var(--max-width, 1440px);
 }
 
+.section {
+    max-width: 900px;
+    margin: auto;
+}
+
 .subtitle {
     display: block;
     font-weight: 500;
@@ -136,10 +141,6 @@ img.center {
 
 .block {
     padding: 30px 10px;
-}
-
-.large-spacing {
-    padding: 50px 50px;
 }
 
 .grow {
@@ -294,7 +295,6 @@ img.center {
 
 .footer .section {
     margin: 30px auto;
-    max-width: 750px;
 }
 
 .footer .contact {
