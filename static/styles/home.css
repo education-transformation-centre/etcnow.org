@@ -12,9 +12,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
+    padding-top: 20px;
 }
 
 .hero .logo {
+    margin-top: -10%;
     width: 100%;
     max-width: 600px;
 }
