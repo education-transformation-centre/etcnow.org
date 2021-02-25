@@ -45,20 +45,26 @@ h5,
 h6 {
     font-family: var(--main-font, sans-serif);
     margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #212121;
 }
 h1 {
     font-weight: 800;
     font-size: 2.5em;
+    letter-spacing: 2px;
 }
 h2 {
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 h3 {
     padding: 0px;
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.4em;
+    color: #292929;
 }
 
 a {
@@ -69,6 +75,7 @@ a {
 p {
     font-size: 1.15em;
     line-height: 1.7em;
+    margin: 5px 5px;
 }
 
 /* image styles */
@@ -259,6 +266,9 @@ img.center {
     background-size: 100% auto;
     background-position: bottom;
     background-repeat: no-repeat;
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero-container {
@@ -277,6 +287,10 @@ img.center {
     background-color: var(--dark-brown, brown);
 
     color: var(--white, white);
+}
+
+.footer h1, .footer h2, .footer h3 {
+    color: white;
 }
 
 .footer span {

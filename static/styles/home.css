@@ -64,6 +64,10 @@
     background-color: #4d9b4d;
 }
 
+.serve h1, .serve h2, .serve h3, .serve h4 {
+    color: white;
+}
+
 .serve img {
     margin-top: 45px;
 }
