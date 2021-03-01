@@ -84,49 +84,49 @@
     margin-bottom: 50px;
 }
 
-.testimonials {
-    padding: 30px 30px;
+.testimonial {
+    padding-top: 40px;
+    background-color: var(--green, brown);
+    color: white;
 }
 
-.testimonials figure {
-    margin: 0px;
-    padding: 0px;
+.testimonial h1, .testimonial h2, .testimonial h3 {
+    color: white;
 }
 
-.testimonials li {
-    padding: 0px 20px;
-    margin: 50px auto 100px auto;
-    max-width: 900px;
+.testimonial .row {
+    margin: auto;
+    width: 90%;
 }
 
-.testimonials i {
-    display: block;
-
-    color: var(--light-grey);
-    font-size: 55px;
-}
-
-.testimonials p {
-    margin: 5px 0px;
-    padding: 0px;
-    text-indent: 3rem;
-}
-
-.testimonials .author {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-
-    font-size: 1.5rem;
+.testimonial .item {
+    padding: 20px 0px 40px 0px;
+    margin: auto;
+    max-width: 700px;
     text-align: center;
 }
 
-.testimonials .position {
-    display: block;
-
-    font-size: 1rem;
-    line-height: 1.1rem;
+.testimonial p {
+    margin-bottom: 10px;
 }
+
+.testimonial .quote {
+    margin: auto;
+}
+
+.testimonial .quote [class*="quote"] {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.testimonial figcaption {
+    font-size: 1.2rem;
+}
+
+.testimonial .position {
+    display: block;
+}
+
 
 @media screen and (min-width: 350px) {
     .hero h1 {
