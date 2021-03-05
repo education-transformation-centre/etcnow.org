@@ -94,16 +94,26 @@
     color: white;
 }
 
+.testimonial [class*="fa-quote"] {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
 .testimonial .row {
+    padding-bottom: 30px;
     margin: auto;
     width: 90%;
 }
 
 .testimonial .item {
-    padding: 20px 0px 40px 0px;
+    padding: 0px 0px 30px 0px;
     margin: auto;
     max-width: 700px;
     text-align: center;
+}
+
+.testimonial .item ~ .testimonial .item {
+    margin-top: 40px;
 }
 
 .testimonial p {
@@ -114,13 +124,9 @@
     margin: auto;
 }
 
-.testimonial .quote [class*="quote"] {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
 .testimonial figcaption {
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .testimonial .position {
