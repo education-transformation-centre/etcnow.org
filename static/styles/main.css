@@ -315,8 +315,10 @@ img.center {
     margin: auto;
     padding: 20px 50px 30px 50px;
 
+    background-color: #7d5a40; 
     background-color: var(--dark-brown, brown);
 
+    color: white;
     color: var(--white, white);
 }
 
