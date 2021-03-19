@@ -189,7 +189,7 @@ img.center {
 }
 
 [class*="btn"] {
-    display: inline-block;
+    display: block;
 
     margin-top: 20px;
     
@@ -355,6 +355,16 @@ img.center {
 
 .footer .contact h2 {
     padding-bottom: 15px;
+}
+
+@media screen and (min-width: 500px) {
+    [class*="btn"] {
+        display: inline-block;
+    }
+
+    [class*="btn"] + [class*="btn"] {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (min-width: 700px) {
