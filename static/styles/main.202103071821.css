@@ -361,16 +361,16 @@ img.center {
     [class*="btn"] {
         display: inline-block;
     }
-
-    [class*="btn"] + [class*="btn"] {
-        margin-left: 15px;
-    }
 }
 
 @media screen and (min-width: 700px) {
     /* left aligns navbar logo */
     .navbar .content {
         text-align: left;
+    }
+
+    [class*="btn"] + [class*="btn"] {
+        margin-left: 15px;
     }
 }
 
