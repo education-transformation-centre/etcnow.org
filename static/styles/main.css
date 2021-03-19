@@ -123,10 +123,9 @@ img.center {
     margin-right: auto;
 }
 
-.content {
-    margin: auto;
+.container {
     width: 90%;
-    max-width: var(--max-width, 1440px);
+    margin: auto;
 }
 
 .section {
