@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
+{% set version = '20210318-01'%}
+
 {% block head %}
-<link rel="stylesheet" href="static/styles/404.css"/>
+<link rel="stylesheet" href="static/styles/404.css?v={{ version }}"/>
 <meta name="description" content="Sorry but this page does not exist. Please visit our homepage for more information.">
 {% endblock %}
 {% block title %}It looks like that page does not exist.{% endblock %}

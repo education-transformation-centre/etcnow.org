@@ -1,3 +1,5 @@
+{% set version = '20210318-01'%}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,7 +32,7 @@
         <script src="https://kit.fontawesome.com/e1c18cc05e.js" crossorigin="anonymous"></script>
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="static/styles/main.css" />
+        <link rel="stylesheet" href="static/styles/main.css?v={{ version }}" />
 
         {% block head %}{% endblock %}
     </head>
