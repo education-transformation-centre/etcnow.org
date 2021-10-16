@@ -48,10 +48,12 @@
                 ETC provides a therapeutic environment where students participate in psycho educational and
                 counseling groups that supplement the traditional academic activities.
             </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeszndZgec9EjftnetdWlDE2HW6VjqX_X4O7t277JsdIE8sUg/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0"
-                class="btn grow center-text">Counseling Application</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdArp8Ev_HeDlviS_4vhSz0RDfRcJnU1g0gRFqMX05ADX1Pnw/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0"
-                class="btn grow center-text">Academic Consultation Services</a>
+            <a class="btn"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeszndZgec9EjftnetdWlDE2HW6VjqX_X4O7t277JsdIE8sUg/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0">Counseling
+                Application</a>
+            <a class="btn"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdArp8Ev_HeDlviS_4vhSz0RDfRcJnU1g0gRFqMX05ADX1Pnw/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0">Academic
+                Consultation Services</a>
         </div>
         <div class="section">
             <h3>Team</h3>
