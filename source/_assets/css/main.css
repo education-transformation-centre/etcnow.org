@@ -9,7 +9,7 @@ html {
 /*16px*/
 
 body {
-    background: white;
+    background-image: url('/assets/images/background.png');
     font-weight: 500;
     line-height: 1.75;
     color: #000000;
