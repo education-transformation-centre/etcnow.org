@@ -107,7 +107,7 @@
     </div>
 </section>
 
-<section class="py-10 my-14 bg-green text-white">
+<section class="py-10 mt-14 bg-green text-white">
     <div class="container">
         <h2 class="mt-0 text-center">Testimonials</h2>
         <figure role="group">

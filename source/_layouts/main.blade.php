@@ -14,24 +14,27 @@
 <body class="text-gray-900 font-sans antialiased">
     @yield('body')
 
-    <script src="static/scripts/testimonials.js"></script>
-
-    <footer class="footer center-text">
-        <section class="section contact">
-            <h2>Contact Us</h2>
-            <span>Email:
-                <a href="mailto:info@etcnow.org">info@etcnow.org</a></span>
-            <span>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></span>
-        </section>
-        <section class="section">
-            <p>
-                Education Transformation does not and shall not discriminate
-                on the basis of race, color, religion (creed), gender,
-                gender expression, age, national origin (ancestry),
-                disability, marital status, sexual orientation, or military
-                status, in any of its activities or operations.
-            </p>
-        </section>
+    <footer class="py-10 text-center bg-brown-dark text-white">
+        <div class="container">
+            <section class="mb-3">
+                <h2 class="mt-0">Contact Us</h2>
+                <div class="text-lg font-bold">
+                    <div>Email:
+                        <a href="mailto:info@etcnow.org">info@etcnow.org</a>
+                    </div>
+                    <div>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></div>
+                </div>
+            </section>
+            <section class="section">
+                <p>
+                    Education Transformation does not and shall not discriminate
+                    on the basis of race, color, religion (creed), gender,
+                    gender expression, age, national origin (ancestry),
+                    disability, marital status, sexual orientation, or military
+                    status, in any of its activities or operations.
+                </p>
+            </section>
+        </div>
     </footer>
 </body>
 
