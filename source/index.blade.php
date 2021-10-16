@@ -8,7 +8,7 @@
         <img class="h-auto w-full max-w-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
             class="logo">
 
-        <ul class="p-5 pl-8 list-disc text-lg text-gray-800">
+        <ul class="p-5 pl-8 list-disc text-lg text-gray-700">
             <li>Growth</li>
             <li>Transformation</li>
             <li>Achievement</li>
