@@ -15,16 +15,14 @@
         </ul>
     </div>
 </section>
-<section class="mission block center-text">
-    <div class="container">
-        <div class="section">
-            <p>
-                We endeavor to create an atmosphere of “relaxed alertness” where there
-                is a combination of high challenge and high expectations in a low threat
-                learning community; and a state of mind that combines confidence,
-                competence and intrinsic motivation (Cainelearning.com).
-            </p>
-        </div>
+<section class="text-center bg-brown-dark text-white">
+    <div class="container py-5">
+        <p>
+            We endeavor to create an atmosphere of “relaxed alertness” where there
+            is a combination of high challenge and high expectations in a low threat
+            learning community; and a state of mind that combines confidence,
+            competence and intrinsic motivation (Cainelearning.com).
+        </p>
     </div>
 </section>
 

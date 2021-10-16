@@ -61,5 +61,5 @@ li {
 }
 
 .container {
-    @apply max-w-5xl px-3 mx-auto;
+    @apply max-w-5xl px-4 mx-auto;
 }

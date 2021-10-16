@@ -13,6 +13,11 @@ module.exports = {
                 "4xl": "4.209rem",
                 "5xl": "5.610rem",
             },
+            colors: {
+                brown: {
+                    dark: "#6c4d40",
+                },
+            },
         },
     },
     variants: {
