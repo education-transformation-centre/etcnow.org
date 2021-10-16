@@ -3,7 +3,7 @@
 return [
     'production' => false,
     'baseUrl' => '',
-    'title' => 'Jigsaw',
+    'title' => 'Education Transformation Centre',
     'description' => 'Website description.',
     'collections' => [],
 ];
