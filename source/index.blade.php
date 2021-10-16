@@ -1,14 +1,14 @@
 @extends('_layouts.main')
 
 @section('body')
-<section class="md:h-screen flex justify-center items-center"
+<section class="flex justify-center items-center"
     style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
     #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
-    <div class="max-w-6xl p-14 mb-24 mx-auto md:flex flex-wrap items-center gap-10 md:gap-24">
+    <div class="max-w-6xl py-32 px-14 mb-24 mx-auto md:flex flex-wrap items-center gap-10 md:gap-14">
         <img class="flex-1 w-full max-h-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
             class="logo">
 
-        <ul class="flex-1 p-5 pl-8 list-disc text-xl md:mt-10 text-gray-700">
+        <ul class="flex-1 p-5 pl-8 mt-8 list-disc text-2xl md:mt-10 text-gray-700">
             <li>Growth</li>
             <li>Transformation</li>
             <li>Achievement</li>
@@ -25,8 +25,7 @@
         </p>
     </div>
 </section>
-
-<section class="">
+<section class="py-1 pb-16" style="background-image: url('assets/images/about.jpg');">
     <div class="container">
         <div class="">
             <h2>About</h2>
@@ -65,7 +64,7 @@
     </div>
 </section>
 
-<section class="py-10 my-14 text-center bg-green text-white">
+<section class="py-10 mb-14 text-center bg-green text-white">
     <div class="container">
         <div class="">
             <h2 class="mt-0">Who We Serve</h2>
