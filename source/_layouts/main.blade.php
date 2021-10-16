@@ -12,7 +12,10 @@
 </head>
 
 <body class="text-gray-900 font-sans antialiased overflow-hidden">
-    @yield('body')
+    @yield('hero')
+    <div class="container">
+        @yield('body')
+    </div>
 
     <script src="static/scripts/testimonials.js"></script>
 
