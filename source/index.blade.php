@@ -5,11 +5,10 @@
     style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
     #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
     <div class="container flex flex-wrap p-14 items-center gap-10 md:gap-24">
-        <img class="h-auto w-full max-w-lg" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
+        <img class="h-auto w-full max-w-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
             class="logo">
 
-
-        <ul class="p-5 pl-5 list-disc text-lg text-gray-800">
+        <ul class="p-5 pl-8 list-disc text-lg text-gray-800">
             <li>Growth</li>
             <li>Transformation</li>
             <li>Achievement</li>
