@@ -11,7 +11,7 @@
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </head>
 
-<body class="text-gray-900 font-sans antialiased overflow-hidden">
+<body class="text-gray-900 font-sans antialiased">
     @yield('body')
 
     <script src="static/scripts/testimonials.js"></script>
