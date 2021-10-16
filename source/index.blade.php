@@ -1,14 +1,14 @@
 @extends('_layouts.main')
 
 @section('body')
-<section class="hero"
+<section class="md:h-screen flex justify-center items-center"
     style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
     #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
-    <div class="container flex flex-wrap p-14 items-center gap-10 md:gap-24">
-        <img class="h-auto w-full max-w-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
+    <div class="max-w-6xl p-14 md:mb-32 mx-auto flex flex-wrap items-center gap-10 md:gap-24">
+        <img class="flex-1 w-full max-w-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
             class="logo">
 
-        <ul class="p-5 pl-8 list-disc text-lg text-gray-700">
+        <ul class="flex-1 p-5 pl-8 list-disc text-xl md:mt-10 text-gray-700">
             <li>Growth</li>
             <li>Transformation</li>
             <li>Achievement</li>
@@ -26,9 +26,9 @@
     </div>
 </section>
 
-<section class="about block">
+<section class="">
     <div class="container">
-        <div class="section">
+        <div class="">
             <h2>About</h2>
             <p>
                 The Education Transformation Centre is an alternate education course,
@@ -36,7 +36,7 @@
                 frequent instances of detention and suspension.
             </p>
         </div>
-        <div class="section">
+        <div class="">
             <h3>Services</h3>
             <p>
                 ETC’s therapeutic mental health services include mental health
