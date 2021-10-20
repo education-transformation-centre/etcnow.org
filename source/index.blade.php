@@ -111,30 +111,84 @@
 <section class="py-10 mt-14 bg-green text-white" x-data="{ open: false }">
     <div class="container">
         <h2 class="mt-0 text-center">Testimonials</h2>
-        <x-testimony name="Adrainne Johnson" title="Parent, AHS">
+        <x-testimony name="STARS">
             <p>
-                I would like to share my experience working with Education Transformation Centre (ETC).
-                First I would like to say, the staff was very supportive of the child. They are very great
-                with making sure the kids get an education. They also go above and beyond, if the student
-                needs more assistance, Dr. Carr will get the student tutors for more one on one.
+                Here at STARS (Structured Therapeutic Adolescent Residential Services) we serve youth 13-18 years old
+                who
+                have
+                experienced various traumas, losses, and abuse; however, they can show a lot of resilience and live
+                successfully. Education Transformation Centre (ETC) under Dr. Carr's leadership was able to establish
+                rapport with our
+                youth quickly where respect and hope was at the core of their services from the beginning to end.
             </p>
             <p>
-                Education Transformation Centre makes sure the students achieve their goals that will get
-                the student back into the regular school setting and for adulthood. My daughter used to be
-                upset that she had to go through the program. After she got the understanding of the
-                program, she starting accepting the things she had to do was only going to make her become
-                successful in life. ETC will continued to follow the student till graduation.
+                Dr. Carr certainly has a lot of expertise in serving our population, in addition, the two interns,
+                displayed
+                incredible
+                energy and patience to connect with our residents. Residents expressed that they felt
+                heard, trusted, and respected by the ETC team. On this foundation, ETC was able to help our residents
+                unearth their
+                potential thereby increasing their resolve to be successful and looking at how current behaviors dampen
+                their progress
+                toward reaching current program goals.
             </p>
             <p>
-                So, my message to students and parents is ETC is a great program, I highly recommend it. My
-                daughter was struggling in math, ETC made her struggle come to ease. My daughter will be a
-                graduate with her class of 2021.
+                What impressed us the most was the ability of ETC staff to provide programing that kept residents
+                engaged at
+                least 90% of the time during a three-hour program, three days a week that was creative, relevant, and
+                inspiring. The
+                first
+                week of the program, we heard staff remarking, "we need to hire them now for next year," later STARS
+                staff
+                were asking
+                the question "how do we get them involved with our youth during the school year" and the final week
+                staff
+                expressing "we gotta have them back next year."
             </p>
+            <p>
+                We are grateful for the vast efforts of ETC to get community speakers involved that could reinforce a
+                consistent
+                message that you matter, you deserve respect, and you are to respect others.
+            </p>
+            <p>
+                Finally, ETC did an excellent job of celebrating our youth by having them decorate their space with
+                positive
+                affirmations,
+                putting on a talent show and a business casual lunch at the Omni Hotel where they learned social
+                etiquette.
+                Honestly,
+                our staff did not do anything terribly wrong, but the residents may have behaved better than we did.
+                They
+                were well
+                prepared by ETC. At these events, residents had a voice to express their personal gratitude towards the
+                STARS staff as
+                well.
+            </p>
+            <p>We highly recommend ETC's services without any reservations.</p>
         </x-testimony>
-
         <div class="text-center mt-5"><button class="btn-white" x-show="!open" @click="open = true">Read
                 More</button></div>
         <div x-show="open">
+            <x-testimony name="Adrainne Johnson" title="Parent, AHS">
+                <p>
+                    I would like to share my experience working with Education Transformation Centre (ETC).
+                    First I would like to say, the staff was very supportive of the child. They are very great
+                    with making sure the kids get an education. They also go above and beyond, if the student
+                    needs more assistance, Dr. Carr will get the student tutors for more one on one.
+                </p>
+                <p>
+                    Education Transformation Centre makes sure the students achieve their goals that will get
+                    the student back into the regular school setting and for adulthood. My daughter used to be
+                    upset that she had to go through the program. After she got the understanding of the
+                    program, she starting accepting the things she had to do was only going to make her become
+                    successful in life. ETC will continued to follow the student till graduation.
+                </p>
+                <p>
+                    So, my message to students and parents is ETC is a great program, I highly recommend it. My
+                    daughter was struggling in math, ETC made her struggle come to ease. My daughter will be a
+                    graduate with her class of 2021.
+                </p>
+            </x-testimony>
             <x-testimony name="Deborah Parker">
                 <p>
                     I was impressed by the encouragement and support that was given to our grandson during
