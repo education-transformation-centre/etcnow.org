@@ -5,5 +5,7 @@ return [
     'baseUrl' => '',
     'title' => 'Education Transformation Centre',
     'description' => 'Website description.',
-    'collections' => [],
+    'collections' => [
+        'testimonies'
+    ],
 ];
