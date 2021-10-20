@@ -6,6 +6,6 @@ return [
     'title' => 'Education Transformation Centre',
     'description' => 'Website description.',
     'collections' => [
-        'testimonies'
+        'testimonies',
     ],
 ];
