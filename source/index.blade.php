@@ -111,20 +111,76 @@
 <section class="py-10 mt-14 bg-green text-white" x-data="{ open: false }">
     <div class="container">
         <h2 class="mt-0 text-center">Testimonials</h2>
-        <x-testimony name="{{ $testimonies->first()->name }}" title="{{ $testimonies->first()->title }}"
-            subtitle="{{ $testimonies->first()->subtitle }}">
-            {!! $testimonies->first()->getContent() !!}
+        <x-testimony name="Adrainne Johnson" title="Parent, AHS">
+            <p>
+                I would like to share my experience working with Education Transformation Centre (ETC).
+                First I would like to say, the staff was very supportive of the child. They are very great
+                with making sure the kids get an education. They also go above and beyond, if the student
+                needs more assistance, Dr. Carr will get the student tutors for more one on one.
+            </p>
+            <p>
+                Education Transformation Centre makes sure the students achieve their goals that will get
+                the student back into the regular school setting and for adulthood. My daughter used to be
+                upset that she had to go through the program. After she got the understanding of the
+                program, she starting accepting the things she had to do was only going to make her become
+                successful in life. ETC will continued to follow the student till graduation.
+            </p>
+            <p>
+                So, my message to students and parents is ETC is a great program, I highly recommend it. My
+                daughter was struggling in math, ETC made her struggle come to ease. My daughter will be a
+                graduate with her class of 2021.
+            </p>
         </x-testimony>
 
         <div class="text-center mt-5"><button class="btn-white" x-show="!open" @click="open = true">Read
                 More</button></div>
         <div x-show="open">
-            @foreach($testimonies as $testimony)
-            <x-testimony name="{{ $testimony->name }}" title="{{ $testimony->title }}"
-                subtitle="{{ $testimony->subtitle }}">
-                {!! $testimony->getContent() !!}
+            <x-testimony name="Deborah Parker">
+                <p>
+                    I was impressed by the encouragement and support that was given to our grandson during
+                    the short time that he was enrolled there. He did not complete due to COVID-19. I felt
+                    that ETC was a good fit for him at that time because he was struggling in school. The
+                    ETC allowed him to work on his academics in a smaller setting as well as work on his
+                    behavior modification.
+                </p>
+                <p>
+                    I believe that the ETC will give students who just don’t fit in the mainstream school, a
+                    head start on their road to a successful educational experience.
+                </p>
+                <p>
+                    Dr. Carr was always professional, informative and guided us through the enrollment
+                    process. She also followed up on his progress after the COVID shutdown. She continued to
+                    encourage him to be the best that he could be.
+                </p>
+                <p>
+                    I recommend that if your child is having difficulties in school and need one on one
+                    attention, take the time to check out what the Educational Transformation Centre can
+                    offer.
+                </p>
             </x-testimony>
-            @endforeach
+            <x-testimony name="Shelley Faulkner M.A., Ed.S." title="Trauma Counselor" subtitle="ReadyKids">
+                <p>
+                    Dr. Carr was a steadfast presence in my client’s life which I feel helped her to
+                    see more positive possibilities for her future. Dr. Carr provided my
+                    client with individualized and focused support that she needed during a challenging
+                    time in her life. This extra support helped to scaffold my client’s sense of
+                    what a trustworthy relationship looks and feels like.
+                </p>
+                <p>
+                    I believe that putting in the extra time and effort often help children/students to feel
+                    that they really do matter and that their life is meaningful and worthwhile. Being a
+                    constant, honest and present adult, helps to create trust in the
+                    relationship between adult and child. Young people need to learn what a safe
+                    and trusting relationship and I was able to witness Dr. Carr be that person for my
+                    client.  Dr. Carr's guidance through the positive seeds planted by the Education
+                    Transformation Centre, will have lasting effects on my client's life,
+                    whether she sees/feels it now or in her future.
+                </p>
+                <p>
+                    All the best Dr. Carr and I hope to work with you again very soon. I love what you are
+                    doing!
+                </p>
+            </x-testimony>
         </div>
     </div>
 </section>

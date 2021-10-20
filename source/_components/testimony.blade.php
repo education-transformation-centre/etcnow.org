@@ -4,11 +4,11 @@
     </div>
     <figcaption class="text-center">
         <div class="text-lg font-bold">{{ $name }}</div>
-        @if($title)
+        @if($title ?? '')
         <div class="text-lg">{{ $title }}</div>
         @endif
-        @if($subtitle)
-        <div class="text-lg">{{ $subtitle }}</div>
+        @if($subtitle ?? '')
+        <div class="text-lg leading-5">{{ $subtitle ?? '' }}</div>
         @endif
     </figcaption>
 </figure>
