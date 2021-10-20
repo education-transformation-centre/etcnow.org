@@ -74,8 +74,8 @@
                 Charlottesville City Public Schools, Counties of Albemarle, Buckingham,
                 Fluvanna, Greene, Louisa, Nelson
             </p>
-            <img class="max-w-xl w-full mx-auto mt-10 rounded-lg shadow-lg" src="assets/images/who-we-serve.jpg"
-                alt="teens studying">
+            <img class="max-w-xl w-full mx-auto mt-10 rounded-lg shadow-xl" src="assets/images/student-studying.jpg"
+                alt="teacher working with student">
         </div>
     </div>
 </section>
