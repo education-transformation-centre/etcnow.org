@@ -1,7 +1,5 @@
 {
-    "name": "vendor/composer",
-    "type": "project",
     "require": {
-        "twig/twig": "^3.1"
+        "tightenco/jigsaw": "^1.3"
     }
 }
