@@ -111,7 +111,8 @@
 <section class="py-10 mt-14 bg-green text-white" x-data="{ open: false }">
     <div class="container">
         <h2 class="mt-0 text-center">Testimonials</h2>
-        <x-testimony name="STARS">
+        <x-testimony name="STARS" name="Rydell Payne" title="from STARS">
+            <img class="max-w-lg mx-auto" src="assets/images/stars-logo.png" alt="STARS logo">
             <p>
                 Here at STARS (Structured Therapeutic Adolescent Residential Services) we serve youth 13-18 years old
                 who
