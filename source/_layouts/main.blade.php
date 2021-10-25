@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html class="overflow-x-hidden" lang="{{ $page->language ?? 'en' }}">
 
 <head>
     <meta charset="utf-8">
