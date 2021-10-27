@@ -27,7 +27,7 @@
         </p>
     </div>
 </section>
-<section class="py-1 pb-16" style="background-image: url('assets/images/about.jpg');">
+<section class="py-1 pb-16 bg-cover" style="background-image: url('assets/images/about.jpg');">
     <div class="container">
         <div class="">
             <h2>About</h2>
