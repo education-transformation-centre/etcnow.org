@@ -23,7 +23,7 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<body class="text-gray-900 font-sans antialiased">
+<body class="text-gray-900 font-sans antialiased overflow-x-hidden">
     @yield('body')
 
     <footer class="py-10 text-center bg-brown-dark text-white">
