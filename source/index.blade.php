@@ -239,5 +239,23 @@
         </div>
     </div>
 </section>
+<section class="py-10 my-10">
+    <div class="container">
+        <div class="md:grid md:grid-cols-3 gap-10">
+            <div>
+                <img class="mx-auto md:ml-0 rounded-lg shadow-xl" src="assets/images/dolores-carr.jpg"
+                    alt="Dr. Dolores Carr">
+            </div>
+            <div class="col-span-2">
+                <h2 class="md:mt-0">Meet Dr. Carr</h2>
+                <p>Ipsa praesentium quia illum autem impedit est quia fugit. Asperiores sequi vero eveniet. Dolorem quo
+                    aut placeat
+                    corrupti ut voluptas velit consequatur. Quidem id repudiandae recusandae aliquam corporis.
+                    Necessitatibus ea labore
+                    fugit consequatur adipisci. Reprehenderit ut eligendi ducimus.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 @endsection
