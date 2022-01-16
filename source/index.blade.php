@@ -40,7 +40,7 @@
         <div class="">
             <h3>Services</h3>
             <p>
-                ETC’s therapeutic mental health services include mental health
+                ETC's therapeutic mental health services include mental health
                 assessments, person-centered service planning, therapeutic
                 activities, parent consultations/psycho-educational training,
                 teacher collaboration and service/program evaluation.
