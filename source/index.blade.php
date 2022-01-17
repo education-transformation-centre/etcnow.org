@@ -247,12 +247,16 @@
                     alt="Dr. Dolores Carr">
             </div>
             <div class="col-span-2">
-                <h2 class="md:mt-0">Meet Dr. Carr</h2>
-                <p>Ipsa praesentium quia illum autem impedit est quia fugit. Asperiores sequi vero eveniet. Dolorem quo
-                    aut placeat
-                    corrupti ut voluptas velit consequatur. Quidem id repudiandae recusandae aliquam corporis.
-                    Necessitatibus ea labore
-                    fugit consequatur adipisci. Reprehenderit ut eligendi ducimus.</p>
+                <h2 class="md:mt-0">Meet the Founder</h2>
+                <p>Dr. Carr is friendly, polite, and with over 20 years of public teaching, she has an overwhelming
+                    wealth
+                    of
+                    knowledge and experience in transforming student's lives.</p>
+                <x-quote cite="Dolores Carr">
+                    My goal is to assist students in finding their passion, then provide education options with choices
+                    matched for each
+                    individual student.
+                </x-quote>
             </div>
         </div>
     </div>
