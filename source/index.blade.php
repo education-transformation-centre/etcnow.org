@@ -248,7 +248,7 @@
             </div>
             <div class="col-span-2">
                 <h2 class="md:mt-3">Meet the Founder</h2>
-                <p>Dr. Dolores Carr is friendly, polite, and with over 20 years of public teaching, she has an
+                <p>Dr. Dolores Carr is friendly, caring, and with over 20 years of public teaching, she has an
                     overwhelming
                     wealth
                     of
