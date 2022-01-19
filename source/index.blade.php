@@ -114,11 +114,13 @@
         <x-testimony name="STARS" name="Rydell Payne" title="from STARS">
             <img class="max-w-lg w-full mx-auto" src="assets/images/stars-logo.png" alt="STARS logo">
             <p>
-                Here at STARS (Structured Therapeutic Adolescent Residential Services) we serve youth 13-18 years old
+                Here at STARS (Structured Therapeutic Adolescent Residential Services) we serve youth 13-18 years
+                old
                 who
                 have
                 experienced various traumas, losses, and abuse; however, they can show a lot of resilience and live
-                successfully. Education Transformation Centre (ETC) under Dr. Carr's leadership was able to establish
+                successfully. Education Transformation Centre (ETC) under Dr. Carr's leadership was able to
+                establish
                 rapport with our
                 youth quickly where respect and hope was at the core of their services from the beginning to end.
             </p>
@@ -127,16 +129,19 @@
                 displayed
                 incredible
                 energy and patience to connect with our residents. Residents expressed that they felt
-                heard, trusted, and respected by the ETC team. On this foundation, ETC was able to help our residents
+                heard, trusted, and respected by the ETC team. On this foundation, ETC was able to help our
+                residents
                 unearth their
-                potential thereby increasing their resolve to be successful and looking at how current behaviors dampen
+                potential thereby increasing their resolve to be successful and looking at how current behaviors
+                dampen
                 their progress
                 toward reaching current program goals.
             </p>
             <p>
                 What impressed us the most was the ability of ETC staff to provide programing that kept residents
                 engaged at
-                least 90% of the time during a three-hour program, three days a week that was creative, relevant, and
+                least 90% of the time during a three-hour program, three days a week that was creative, relevant,
+                and
                 inspiring. The
                 first
                 week of the program, we heard staff remarking, "we need to hire them now for next year," later STARS
@@ -147,7 +152,8 @@
                 expressing "we gotta have them back next year."
             </p>
             <p>
-                We are grateful for the vast efforts of ETC to get community speakers involved that could reinforce a
+                We are grateful for the vast efforts of ETC to get community speakers involved that could reinforce
+                a
                 consistent
                 message that you matter, you deserve respect, and you are to respect others.
             </p>
@@ -161,7 +167,8 @@
                 our staff did not do anything terribly wrong, but the residents may have behaved better than we did.
                 They
                 were well
-                prepared by ETC. At these events, residents had a voice to express their personal gratitude towards the
+                prepared by ETC. At these events, residents had a voice to express their personal gratitude towards
+                the
                 STARS staff as
                 well.
             </p>
@@ -239,6 +246,10 @@
             <x-testimony name="Nancy" img="assets/images/card-01-front.jpg">
                 <p>Thank you for the opportunity to work with Jackie! Thank you for all you do to make the world a
                     better place.</p>
+            </x-testimony>
+            <x-testimony img="assets/images/card-02-front.jpg" reversed>
+                <p>Mrs. Delores, you and your support mean so much to me.</p>
+                <p>I love you so much. Thank you for supporting me, helping me with my goals.</p>
             </x-testimony>
         </div>
     </div>
