@@ -236,6 +236,10 @@
                     doing!
                 </p>
             </x-testimony>
+            <x-testimony name="Nancy" img="assets/images/card-01-front.jpg">
+                <p>Thank you for the opportunity to work with Jackie! Thank you for all you do to make the world a
+                    better place.</p>
+            </x-testimony>
         </div>
     </div>
 </section>
