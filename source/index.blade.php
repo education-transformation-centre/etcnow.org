@@ -244,19 +244,27 @@
                 </p>
             </x-testimony>
             <x-testimony>
-                <div class="grid grid-cols-2 gap-5 mb-5">
-                    <img class="rounded-lg shadow-xl" src="assets/images/card-01-front.jpg"
-                        alt="front of the card from Nancy">
-                    <img class="rounded-lg shadow-xl" src="assets/images/card-01-back.jpg"
-                        alt="back of the card from Nancy">
+                <div class="grid max-w-lg md:max-w-none mx-auto md:grid-cols-2 gap-5 mb-5">
+                    <div class="w-2/3 md:w-full">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-01-front.jpg"
+                            alt="front of the card from Nancy">
+                    </div>
+                    <div class="relative -top-28 md:top-0 w-2/3 md:w-full ml-auto md:mx-auto -mb-28 md:mb-0">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-01-back.jpg"
+                            alt="back of the card from Nancy">
+                    </div>
                 </div>
             </x-testimony>
             <x-testimony>
-                <div class="grid grid-cols-2 gap-5 mb-5">
-                    <img class="rounded-lg shadow-xl" src="assets/images/card-02-front.jpg"
-                        alt="front of the thank you card">
-                    <img class="rounded-lg shadow-xl" src="assets/images/card-02-back.jpg"
-                        alt="back of the thank you card">
+                <div class="grid max-w-lg md:max-w-none mx-auto md:grid-cols-2 gap-5 mb-5">
+                    <div class="w-2/3 md:w-full">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-02-front.jpg"
+                            alt="front of the thank you card">
+                    </div>
+                    <div class="relative -top-28 md:top-0 w-2/3 md:w-full ml-auto md:mx-auto -mb-28 md:mb-0">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-02-back.jpg"
+                            alt="back of the thank you card">
+                    </div>
                 </div>
             </x-testimony>
         </div>
