@@ -243,13 +243,21 @@
                     doing!
                 </p>
             </x-testimony>
-            <x-testimony name="Nancy" img="assets/images/card-01-front.jpg">
-                <p>Thank you for the opportunity to work with Jackie! Thank you for all you do to make the world a
-                    better place.</p>
+            <x-testimony>
+                <div class="grid grid-cols-2 gap-5 mb-5">
+                    <img class="rounded-lg shadow-xl" src="assets/images/card-01-front.jpg"
+                        alt="front of the card from Nancy">
+                    <img class="rounded-lg shadow-xl" src="assets/images/card-01-back.jpg"
+                        alt="back of the card from Nancy">
+                </div>
             </x-testimony>
-            <x-testimony img="assets/images/card-02-front.jpg" reversed>
-                <p>Mrs. Delores, you and your support mean so much to me.</p>
-                <p>I love you so much. Thank you for supporting me, helping me with my goals.</p>
+            <x-testimony>
+                <div class="grid grid-cols-2 gap-5 mb-5">
+                    <img class="rounded-lg shadow-xl" src="assets/images/card-02-front.jpg"
+                        alt="front of the thank you card">
+                    <img class="rounded-lg shadow-xl" src="assets/images/card-02-back.jpg"
+                        alt="back of the thank you card">
+                </div>
             </x-testimony>
         </div>
     </div>
