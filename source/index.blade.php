@@ -40,7 +40,7 @@
         <div class="">
             <h3>Services</h3>
             <p>
-                ETC’s therapeutic mental health services include mental health
+                ETC's therapeutic mental health services include mental health
                 assessments, person-centered service planning, therapeutic
                 activities, parent consultations/psycho-educational training,
                 teacher collaboration and service/program evaluation.
@@ -114,11 +114,13 @@
         <x-testimony name="STARS" name="Rydell Payne" title="from STARS">
             <img class="max-w-lg w-full mx-auto" src="assets/images/stars-logo.png" alt="STARS logo">
             <p>
-                Here at STARS (Structured Therapeutic Adolescent Residential Services) we serve youth 13-18 years old
+                Here at STARS (Structured Therapeutic Adolescent Residential Services) we serve youth 13-18 years
+                old
                 who
                 have
                 experienced various traumas, losses, and abuse; however, they can show a lot of resilience and live
-                successfully. Education Transformation Centre (ETC) under Dr. Carr's leadership was able to establish
+                successfully. Education Transformation Centre (ETC) under Dr. Carr's leadership was able to
+                establish
                 rapport with our
                 youth quickly where respect and hope was at the core of their services from the beginning to end.
             </p>
@@ -127,16 +129,19 @@
                 displayed
                 incredible
                 energy and patience to connect with our residents. Residents expressed that they felt
-                heard, trusted, and respected by the ETC team. On this foundation, ETC was able to help our residents
+                heard, trusted, and respected by the ETC team. On this foundation, ETC was able to help our
+                residents
                 unearth their
-                potential thereby increasing their resolve to be successful and looking at how current behaviors dampen
+                potential thereby increasing their resolve to be successful and looking at how current behaviors
+                dampen
                 their progress
                 toward reaching current program goals.
             </p>
             <p>
                 What impressed us the most was the ability of ETC staff to provide programing that kept residents
                 engaged at
-                least 90% of the time during a three-hour program, three days a week that was creative, relevant, and
+                least 90% of the time during a three-hour program, three days a week that was creative, relevant,
+                and
                 inspiring. The
                 first
                 week of the program, we heard staff remarking, "we need to hire them now for next year," later STARS
@@ -147,7 +152,8 @@
                 expressing "we gotta have them back next year."
             </p>
             <p>
-                We are grateful for the vast efforts of ETC to get community speakers involved that could reinforce a
+                We are grateful for the vast efforts of ETC to get community speakers involved that could reinforce
+                a
                 consistent
                 message that you matter, you deserve respect, and you are to respect others.
             </p>
@@ -161,7 +167,8 @@
                 our staff did not do anything terribly wrong, but the residents may have behaved better than we did.
                 They
                 were well
-                prepared by ETC. At these events, residents had a voice to express their personal gratitude towards the
+                prepared by ETC. At these events, residents had a voice to express their personal gratitude towards
+                the
                 STARS staff as
                 well.
             </p>
@@ -215,27 +222,74 @@
             </x-testimony>
             <x-testimony name="Shelley Faulkner M.A., Ed.S." title="Trauma Counselor" subtitle="ReadyKids">
                 <p>
-                    Dr. Carr was a steadfast presence in my client’s life which I feel helped her to
-                    see more positive possibilities for her future. Dr. Carr provided my
-                    client with individualized and focused support that she needed during a challenging
-                    time in her life. This extra support helped to scaffold my client’s sense of
-                    what a trustworthy relationship looks and feels like.
+                    Dr. Carr was a steadfast presence in my client's life which I feel helped her to
+                    see more positive possibilities for her future. Dr. Carr provided my
+                    client with individualized and focused support that she needed during a challenging
+                    time in her life. This extra support helped to scaffold my client's sense of
+                    what a trustworthy relationship looks and feels like.
                 </p>
                 <p>
                     I believe that putting in the extra time and effort often help children/students to feel
                     that they really do matter and that their life is meaningful and worthwhile. Being a
                     constant, honest and present adult, helps to create trust in the
-                    relationship between adult and child. Young people need to learn what a safe
+                    relationship between adult and child. Young people need to learn what a safe
                     and trusting relationship and I was able to witness Dr. Carr be that person for my
-                    client.  Dr. Carr's guidance through the positive seeds planted by the Education
-                    Transformation Centre, will have lasting effects on my client's life,
-                    whether she sees/feels it now or in her future.
+                    client. Dr. Carr's guidance through the positive seeds planted by the Education
+                    Transformation Centre, will have lasting effects on my client's life,
+                    whether she sees/feels it now or in her future.
                 </p>
                 <p>
                     All the best Dr. Carr and I hope to work with you again very soon. I love what you are
                     doing!
                 </p>
             </x-testimony>
+            <x-testimony>
+                <div class="grid max-w-lg md:max-w-none mx-auto md:grid-cols-2 gap-5 mb-5">
+                    <div class="w-2/3 md:w-full">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-01-front.jpg"
+                            alt="front of the card from Nancy">
+                    </div>
+                    <div class="relative -top-28 md:top-0 w-2/3 md:w-full ml-auto md:mx-auto -mb-28 md:mb-0">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-01-back.jpg"
+                            alt="back of the card from Nancy">
+                    </div>
+                </div>
+            </x-testimony>
+            <x-testimony>
+                <div class="grid max-w-lg md:max-w-none mx-auto md:grid-cols-2 gap-5 mb-5">
+                    <div class="w-2/3 md:w-full">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-02-front.jpg"
+                            alt="front of the thank you card">
+                    </div>
+                    <div class="relative -top-28 md:top-0 w-2/3 md:w-full ml-auto md:mx-auto -mb-28 md:mb-0">
+                        <img class="rounded-lg shadow-xl" src="assets/images/card-02-back.jpg"
+                            alt="back of the thank you card">
+                    </div>
+                </div>
+            </x-testimony>
+        </div>
+    </div>
+</section>
+<section class="py-10 my-10">
+    <div class="container">
+        <div class="md:grid md:grid-cols-3 gap-10">
+            <div>
+                <img class="mx-auto md:ml-0 rounded-lg shadow-xl" src="assets/images/dolores-carr.jpg"
+                    alt="Dr. Dolores Carr">
+            </div>
+            <div class="col-span-2">
+                <h2 class="md:mt-3">Meet the Founder</h2>
+                <p>Dr. Dolores Carr is friendly, caring, and with over 20 years of public teaching, she has an
+                    overwhelming
+                    wealth
+                    of
+                    knowledge and experience in transforming student's lives.</p>
+                <x-quote cite="Dolores Carr">
+                    My goal is to assist students in finding their passion, then provide education options with choices
+                    matched for each
+                    individual student.
+                </x-quote>
+            </div>
         </div>
     </div>
 </section>
