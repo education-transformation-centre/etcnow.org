@@ -98,7 +98,7 @@
             <h3>Outcomes</h3>
             <p>
                 Collaboration with host schools will facilitate a bridge for a
-                student’s return full-time to the traditional setting once
+                student's return full-time to the traditional setting once
                 mental health goals are met or an intensive level of services
                 are no longer needed.
             </p>
