@@ -4,7 +4,7 @@
 <section class="-mb-1 flex justify-center items-center"
     style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
     #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
-    <div class="max-w-6xl py-32 px-14 mb-18 md:mb-52 mx-auto md:flex items-center gap-10 md:gap-14">
+    <div class="max-w-6xl py-32 px-14 mb-18 md:mb-52 mx-auto md:grid grid-cols-2 lg:flex items-center gap-10 md:gap-14">
         <div class="flex-auto w-full">
             <img class=" max-h-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
                 class="logo">
