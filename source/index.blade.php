@@ -4,7 +4,7 @@
 <section class="-mb-1 flex justify-center items-center"
     style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
     #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
-    <div class="max-w-6xl py-32 px-14 mb-18 md:mb-52 mx-auto md:flex items-center gap-10 md:gap-14">
+    <div class="max-w-6xl py-32 px-14 mb-18 md:mb-52 mx-auto md:grid grid-cols-2 lg:flex items-center gap-10 md:gap-14">
         <div class="flex-auto w-full">
             <img class=" max-h-lg p-3" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
                 class="logo">
@@ -98,13 +98,25 @@
             <h3>Outcomes</h3>
             <p>
                 Collaboration with host schools will facilitate a bridge for a
-                student’s return full-time to the traditional setting once
+                student's return full-time to the traditional setting once
                 mental health goals are met or an intensive level of services
                 are no longer needed.
             </p>
         </div>
         <img class="max-w-xl w-full mx-auto mt-10 rounded-lg shadow-lg" src="assets/images/outcomes.jpg"
             alt="Group of students graduating" class="rounded small center" id="outcomes-img">
+        <section class="py-10 my-10">
+            <div class="container text-center">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mb-2 mx-auto" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>Funding Sources
+                </h2>
+                <p>We accept CSA, Private Insurance, and Direct Payments.</p>
+            </div>
+        </section>
     </div>
 </section>
 
