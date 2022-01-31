@@ -3,19 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-
-    @if($production)
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ5YQ51QFJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-VJ5YQ51QFJ');
-    </script>
-    @endif
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="{{ $page->getUrl() }}">
     <meta name="description" content="{{ $page->description }}">
