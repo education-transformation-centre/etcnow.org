@@ -284,12 +284,12 @@
 </section>
 <section class="py-10 my-10">
     <div class="container">
-        <div class="md:grid md:grid-cols-3 gap-10">
-            <div>
-                <img class="mx-auto md:ml-0 rounded-lg shadow-xl" src="assets/images/dolores-carr.jpg"
+        <div class="md:grid md:grid-cols-4 gap-10">
+            <div class="md:mt-5">
+                <img class="mx-auto w-1/2 md:w-full md:ml-0 rounded-lg shadow-xl" src="assets/images/dolores-carr.jpg"
                     alt="Dr. Dolores Carr">
             </div>
-            <div class="col-span-2">
+            <div class="col-span-3">
                 <h2 class="md:mt-3">Meet the Founder</h2>
                 <p>Dr. Dolores Carr is friendly, caring, and with over 20 years of public teaching, she has an
                     overwhelming
