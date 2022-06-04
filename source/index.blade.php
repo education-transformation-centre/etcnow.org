@@ -3,7 +3,7 @@
 @section('body')
     <section class="flex items-center justify-center -mb-1"
         style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
-                                                            #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
+                                                                                                                        #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
         <div class="items-center max-w-6xl grid-cols-2 gap-10 py-32 mx-auto px-14 mb-18 md:mb-52 md:grid lg:flex md:gap-14">
             <div class="flex-auto w-full">
                 <img class="p-3 max-h-lg" src="assets/images/logo.png" alt="Education Transformation Centre Logo"
@@ -123,39 +123,41 @@
     <section class="py-10 text-white mt-14 bg-green" x-data="{ open: false }">
         <div class="container">
             <h2 class="mt-0 text-center">Testimonials</h2>
-            <x-testimony name="Regenia Smith and student, Jackie Smith">
+            <x-testimony name="Regenia & Jackie Smith">
                 <p>Dear Dr. Carr,</p>
                 <p>
-                    Jackie and I are so excited about your school and what it has to offer. When we first came to you, I
-                    don't think Jackie had a dream in her spirit. With your help and attending your school, Jackie has
-                    many
-                    dreams.
+                    Jackie and I are so excited about your school and what it offered us. When we first came to Education
+                    Transformation Centre, I didn't think Jackie had a dream in her spirit. With your help and attending
+                    your
+                    school, Jackie has many dreams.
                 </p>
                 <p>
-                    She is excelling in her schoolwork and is focused more than I have ever seen her. When Jackie
-                    started,
-                    she was in the 9th grade. With her attendance and help from the school, she completed 9th grade in 4
-                    months.
+                    She is excelling in her schoolwork and focused more than I have ever seen her. When Jackie started, she
+                    was
+                    failing 9th grade. With improved attendance and help from your school, she successfully completed 9th
+                    grade
+                    in 4 months.
                 </p>
                 <p>
-                    I would suggest to parents who have children that's not focused or seem to not care or just don't
-                    have
-                    it together or your child may be behind in their work and in their minds, they just don't know how
-                    to
-                    get caught up, please contact Dr. Dolores Carr with Education Transformation Centre.
+                    I would suggest to parents who have children that may not be focused, seem not to care, just don't have
+                    it
+                    together or your child may be behind in their work and in their minds, they just don't know how to get
+                    caught up, please contact Dr. Dolores Carr with Education Transformation Centre.
                 </p>
                 <p>
-                    Jackie loved attending class ad she does a great deal of work at home. She has set a goal for when
-                    she
-                    wants to complete 10th grade and has plans to do dual classes to get some college credit.
+                    Jackie loves attending class and now does a great deal more school work at home. She has set a goal for
+                    when
+                    she wants to complete 10th grade and has plans to do dual classes to get some college credit.
                 </p>
                 <p>
-                    Jackie did a complete turnaround. This is the best she has ever done. She attended only private
-                    schools
-                    but did not bring out the best of the work she can do. The Education Transformation Centre really
-                    transformed this young lady of mine into a new person! She hopes and dreams like all young people
+                    Jackie has done a complete turnaround. This is the best she has ever done. She has only attended private
+                    schools, but they did not bring out the best of all she can do. The Education Transformation Centre
+                    really
+                    transformed this young lady of mine into a new person! She has hopes and dreams like all young people
                     should. We must keep the dream alive in our young people.
                 </p>
+                <p>Thank you, Dr. Dolores Carr and staff. WONDERFUL PEOPLE.</p>
+                <p>Love, </br>Regenia & Jackie Smith, 10th grade student</p>
             </x-testimony>
             <div class="mt-5 text-center"><button class="btn-white" x-show="!open" @click="open = true">Read
                     More</button></div>
