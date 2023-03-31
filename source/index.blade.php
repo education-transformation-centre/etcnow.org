@@ -105,16 +105,35 @@
             </div>
             <img class="w-full max-w-xl mx-auto mt-10 rounded-lg shadow-lg" src="assets/images/outcomes.jpg"
                 alt="Group of students graduating" class="rounded small center" id="outcomes-img">
-            <section class="py-10 my-10">
+            <section class="py-8 mt-10">
                 <div class="container text-center">
                     <h2>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-2" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>Funding Sources
+                        </svg>
+                        Funding Sources
                     </h2>
-                    <p>We accept CSA, Private Insurance, and Direct Payments.</p>
+                    <p>We accept Medicaid, Child Services Act (CSA), Private Insurance, and Direct Payments.</p>
+                </div>
+            </section>
+            <section class="py-8">
+                <div class="container text-center">
+                    <h2>
+                        <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                            xml:space="preserve"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+                            <path
+                                d="M478.862 129.166a20.937 20.937 0 0 1 6.071 14.843V432c0 29.038-23.895 52.933-52.933 52.933H240c-11.484 0-20.933-9.449-20.933-20.933s9.449-20.933 20.933-20.933h192c6.071 0 11.067-4.996 11.067-11.067V164.933H400c-29.038 0-52.933-23.895-52.933-52.933V68.933H176c-6.071 0-11.067 4.996-11.067 11.067v32c0 11.484-9.449 20.933-20.933 20.933s-20.933-9.449-20.933-20.933V80c0-29.038 23.895-52.933 52.933-52.933h191.991a20.937 20.937 0 0 1 14.843 6.071l.014.014 96 96 .014.014ZM388.933 112c0 6.071 4.996 11.067 11.067 11.067h13.531l-24.598-24.598V112Z"
+                                style="fill-rule:nonzero" />
+                            <path
+                                d="M228.933 256.01a100.98 100.98 0 0 1-32 73.523V464.025c-.042 8.395-5.131 15.984-12.854 19.206a18.32 18.32 0 0 1-8.092 1.702 20.942 20.942 0 0 1-14.843-6.092L128 445.552l-33.144 33.289a20.968 20.968 0 0 1-22.829 4.434 20.967 20.967 0 0 1-12.96-19.25V329.533a100.981 100.981 0 0 1-32-73.727c0-55.37 45.563-100.933 100.933-100.933 55.37 0 100.933 45.563 100.933 100.933v.204Zm-73.866 157.455v-60.298a99.195 99.195 0 0 1-54.134 0v60.298l12.205-12.299A20.942 20.942 0 0 1 128 394.974a20.945 20.945 0 0 1 14.862 6.191l12.205 12.3ZM128 315.067c32.403 0 59.067-26.664 59.067-59.067S160.403 196.933 128 196.933 68.933 223.597 68.933 256 95.597 315.067 128 315.067ZM304 123.067c11.484 0 20.933 9.449 20.933 20.933s-9.449 20.933-20.933 20.933h-80c-11.484 0-20.933-9.449-20.933-20.933s9.449-20.933 20.933-20.933h80ZM400 203.067c11.484 0 20.933 9.449 20.933 20.933s-9.449 20.933-20.933 20.933H272c-11.484 0-20.933-9.449-20.933-20.933s9.449-20.933 20.933-20.933h128ZM400 283.067c11.484 0 20.933 9.45 20.933 20.933 0 11.484-9.449 20.933-20.933 20.933H272c-11.484 0-20.933-9.449-20.933-20.933s9.449-20.933 20.933-20.933h128ZM400 363.067c11.484 0 20.933 9.449 20.933 20.933s-9.449 20.933-20.933 20.933H240c-11.484 0-20.933-9.449-20.933-20.933s9.449-20.933 20.933-20.933h160Z"
+                                style="fill-rule:nonzero" />
+                        </svg>
+                        Licensure
+                    </h2>
+                    <p>Virginia Department of Behavioral Health and Developmental Services.</p>
                 </div>
             </section>
         </div>
