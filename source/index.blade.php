@@ -121,7 +121,7 @@
             <section class="py-8">
                 <div class="container text-center">
                     <h2>
-                        <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
                             xml:space="preserve"
                             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
                             <path
