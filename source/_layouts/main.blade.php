@@ -21,6 +21,9 @@
 
     <!-- AlpineJS -->
     <script src="//unpkg.com/alpinejs" defer></script>
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="SLRFCUUE" defer></script>
 </head>
 
 <body class="text-gray-900 font-sans antialiased overflow-x-hidden">
@@ -33,8 +36,7 @@
                 <div class="text-lg font-bold">
                     <div>Email:
                         <a href="mailto:info@etcnow.org">info@etcnow.org</a>
-                    </div>
-                    <div>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></div>
+                    </div>                    <div>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></div>
                 </div>
             </section>
             <section class="section">
