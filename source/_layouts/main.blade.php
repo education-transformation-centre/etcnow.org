@@ -31,7 +31,7 @@
 
     <footer class="py-10 text-white bg-brown-dark">
         <div class="container max-w-7xl">
-            <section class="grid grid-cols-2 gap-8 mb-3">
+            <section class="grid md:grid-cols-2 gap-10 mb-3">
                 <div>
                     <p class="text-xl font-semibold">Education Transformation Centre</p>
                     <div class="space-y-3">
@@ -64,17 +64,28 @@
                 </div>
 
                 <div>
-                    <form action="https://fieldgoal.io/f/bJpocF" method="POST" class="grid grid-cols-1 text-black">
-                        <label for="email">Your Email</label>
-                        <input type="text" name="email" required>
+                    <p class="text-white text-lg font-semibold">Get in touch</p>
 
-                        <label for="referrer">Where did you hear about us?</label>
-                        <input type="text" name="referrer" required>
+                    <form action="https://fieldgoal.io/f/bJpocF" method="POST"
+                        class="grid grid-cols-1 gap-1 text-black">
+                        <div class="grid">
+                            <label for="email" class="text-white">What is your email address?</label>
+                            <input type="email" name="email" required>
+                        </div>
 
-                        <label for="message">Message</label>
-                        <textarea name="message"></textarea>
+                        <div class="grid">
+                            <label for="referrer" class="text-white">Where did you hear about us?</label>
+                            <input type="text" name="referrer" required>
+                        </div>
 
-                        <button type="submit btn-white">Submit</button>
+                        <div class="grid">
+                            <label for="message" class="text-white">Message</label>
+                            <textarea name="message"></textarea>
+                        </div>
+
+                        <div class="mt-3 flex">
+                            <button type="submit" class="btn-white">Submit</button>
+                        </div>
                     </form>
                 </div>
             </section>
