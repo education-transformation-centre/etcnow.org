@@ -26,17 +26,18 @@
     <script src="https://cdn.usefathom.com/script.js" data-site="SLRFCUUE" defer></script>
 </head>
 
-<body class="text-gray-900 font-sans antialiased overflow-x-hidden">
+<body class="overflow-x-hidden font-sans antialiased text-gray-900">
     @yield('body')
 
-    <footer class="py-10 text-center bg-brown-dark text-white">
+    <footer class="py-10 text-center text-white bg-brown-dark">
         <div class="container">
             <section class="mb-3">
                 <h2 class="mt-0">Contact Us</h2>
                 <div class="text-lg font-bold">
                     <div>Email:
                         <a href="mailto:info@etcnow.org">info@etcnow.org</a>
-                    </div>                    <div>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></div>
+                    </div>
+                    <div>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></div>
                 </div>
             </section>
             <section class="section">
