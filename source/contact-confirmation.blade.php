@@ -9,7 +9,7 @@
             <div class="max-w-2xl">
                 <p class="text-lg font-semibold mb-1">Thanks for getting in touch!</p>
 
-                <p>Our servers have recieved you message and are working hard to transport it to
+                <p>Our servers have recieved your message and are working hard to transport it to
                     Dr. Carr's inbox on your behalf. You should hear back from her soon.</p>
             </div>
 
