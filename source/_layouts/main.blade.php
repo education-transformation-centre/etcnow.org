@@ -35,7 +35,7 @@
                 <div>
                     <p class="text-xl font-semibold">Education Transformation Centre</p>
                     <div class="space-y-3">
-                        <div>
+                        <div class="lg:flex gap-5">
                             <div class="flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -64,7 +64,7 @@
                 </div>
 
                 <div>
-                    <p class="text-white text-lg font-semibold">Get in touch</p>
+                    <p class="text-white text-xl font-semibold">Get in touch</p>
 
                     <form action="https://fieldgoal.io/f/bJpocF" method="POST"
                         class="grid grid-cols-1 gap-1 text-black">
