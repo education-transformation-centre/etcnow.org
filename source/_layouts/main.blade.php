@@ -2,7 +2,7 @@
 
 @section('body')
     <main>
-        @yield('body')
+        @yield('main')
     </main>
 
     <footer class="py-10 text-white bg-brown-dark">

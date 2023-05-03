@@ -1,6 +1,6 @@
 @extends('_layouts.main')
 
-@section('body')
+@section('main')
     <section class="flex items-center justify-center -mb-1"
         style="background-image: url('assets/images/grass.png'), linear-gradient(to top right,
                                                                                                                         #63b0dc, #a6e3ff), linear-gradient(to right top, rgb(99, 176, 220), rgb(166, 227, 255)); background-position: bottom; background-repeat: no-repeat; background-size: contain;">
