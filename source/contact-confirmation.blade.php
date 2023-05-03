@@ -1,7 +1,7 @@
 @extends('_layouts.base')
 
 @section('body')
-    <div class="h-full flex justify-center items-center">
+    <div class="h-full p-8 flex justify-center items-center">
         <div class="text-center">
             <a href="{{ url('/') }}">
                 <img class="mx-auto h-32 mb-8" src="{{ url('/assets/images/logo.png') }}" />
