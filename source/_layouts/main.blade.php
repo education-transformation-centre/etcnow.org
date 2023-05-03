@@ -1,56 +1,69 @@
-<!DOCTYPE html>
-<html class="overflow-x-hidden" lang="{{ $page->language ?? 'en' }}">
+@extends('_layouts.base')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="{{ $page->getUrl() }}">
-    <meta name="description" content="{{ $page->description }}">
-    <title>{{ $page->title }}</title>
-    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-    <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+@section('body')
+    <main>
+        @yield('body')
+    </main>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4e9b4d">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- AlpineJS -->
-    <script src="//unpkg.com/alpinejs" defer></script>
-
-    <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://cdn.usefathom.com/script.js" data-site="SLRFCUUE" defer></script>
-</head>
-
-<body class="overflow-x-hidden font-sans antialiased text-gray-900">
-    @yield('body')
-
-    <footer class="py-10 text-center text-white bg-brown-dark">
-        <div class="container">
-            <section class="mb-3">
-                <h2 class="mt-0">Contact Us</h2>
-                <div class="text-lg font-bold">
-                    <div>Email:
-                        <a href="mailto:info@etcnow.org">info@etcnow.org</a>
+    <footer class="py-10 text-white bg-brown-dark">
+        <div class="container max-w-7xl">
+            <section class="grid md:grid-cols-2 gap-10 mb-3">
+                <div>
+                    <p class="text-xl font-semibold">Education Transformation Centre</p>
+                    <div class="space-y-3">
+                        <div class="lg:flex gap-5">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                                <a href="mailto:info@etcnow.org">info@etcnow.org</a>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+                                <a href="tel:434-484-0964">(434) 484-0964</a>
+                            </div>
+                        </div>
+                        <p class="text-sm opacity-80">
+                            Education Transformation does not and shall not discriminate
+                            on the basis of race, color, religion (creed), gender,
+                            gender expression, age, national origin (ancestry),
+                            disability, marital status, sexual orientation, or military
+                            status, in any of its activities or operations.
+                        </p>
                     </div>
-                    <div>Phone: <a href="tel:434-484-0964">(434) 484-0964</a></div>
                 </div>
-            </section>
-            <section class="section">
-                <p>
-                    Education Transformation does not and shall not discriminate
-                    on the basis of race, color, religion (creed), gender,
-                    gender expression, age, national origin (ancestry),
-                    disability, marital status, sexual orientation, or military
-                    status, in any of its activities or operations.
-                </p>
+
+                <div>
+                    <p class="text-white text-xl font-semibold">Get in touch</p>
+
+                    <form action="https://fieldgoal.io/f/bJpocF" method="POST" class="grid grid-cols-1 gap-1 text-black">
+                        <div class="grid">
+                            <label for="email" class="text-white">What is your email address?</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="grid">
+                            <label for="referrer" class="text-white">Where did you hear about us?</label>
+                            <input type="text" name="referrer" required>
+                        </div>
+
+                        <div class="grid">
+                            <label for="message" class="text-white">Message</label>
+                            <textarea name="message"></textarea>
+                        </div>
+
+                        <div class="mt-3 flex">
+                            <button type="submit" class="btn-white">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </div>
     </footer>
-</body>
-
-</html>
+@endsection
