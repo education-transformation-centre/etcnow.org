@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html class="overflow-x-hidden" lang="{{ $page->language ?? 'en' }}">
+@extends('_layouts.base')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="{{ $page->getUrl() }}">
-    <meta name="description" content="{{ $page->description }}">
-    <title>{{ $page->title }}</title>
-    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-    <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4e9b4d">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- AlpineJS -->
-    <script src="//unpkg.com/alpinejs" defer></script>
-
-    <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://cdn.usefathom.com/script.js" data-site="SLRFCUUE" defer></script>
-</head>
-
-<body class="overflow-x-hidden font-sans antialiased text-gray-900">
-    @yield('body')
+@section('body')
+    <main>
+        @yield('body')
+    </main>
 
     <footer class="py-10 text-white bg-brown-dark">
         <div class="container max-w-7xl">
@@ -37,8 +13,8 @@
                     <div class="space-y-3">
                         <div class="lg:flex gap-5">
                             <div class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                 </svg>
@@ -66,8 +42,7 @@
                 <div>
                     <p class="text-white text-xl font-semibold">Get in touch</p>
 
-                    <form action="https://fieldgoal.io/f/bJpocF" method="POST"
-                        class="grid grid-cols-1 gap-1 text-black">
+                    <form action="https://fieldgoal.io/f/bJpocF" method="POST" class="grid grid-cols-1 gap-1 text-black">
                         <div class="grid">
                             <label for="email" class="text-white">What is your email address?</label>
                             <input type="email" name="email" required>
@@ -91,6 +66,4 @@
             </section>
         </div>
     </footer>
-</body>
-
-</html>
+@endsection
