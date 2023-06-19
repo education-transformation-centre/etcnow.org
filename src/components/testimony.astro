@@ -1,0 +1,22 @@
+---
+const { name, title, subtitle, img, alt, reversed } = Astro.props;
+---
+
+<figure class="mb-10" role="group">
+	<div class:list={[{'grid grid-cols-3 gap-5': img != null}]}>
+		{img && !reversed && <img class="rounded-lg shadow-xl" src={img ?? ''} alt={alt ?? ''}>}
+		
+		<div class="col-span-2">
+			<div>
+				<slot />
+			</div>
+			<figcaption class="text-center">
+				<div class="text-lg font-bold">{name ?? ''}</div>
+				{title != null && <div class="text-lg">{title ?? ''}</div>}
+				{subtitle != null && <div class="text-lg leading-5">{subtitle ?? ''}</div>}
+			</figcaption>
+		</div>
+		
+		{img && reversed && <img class="rounded-lg shadow-xl" src={img ?? ''} alt={alt ?? ''}>}
+	</div>
+</figure>
