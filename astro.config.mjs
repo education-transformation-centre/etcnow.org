@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import alpinejs from "@astrojs/alpinejs";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://etcnow.org",
@@ -9,5 +11,5 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), alpinejs()]
+  }), alpinejs(), sitemap()]
 });
