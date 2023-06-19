@@ -4,5 +4,9 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://etcnow.org",
-  integrations: [tailwind()],
+  integrations: [
+    tailwind({
+      config: { applyBaseStyles: false },
+    }),
+  ],
 });
