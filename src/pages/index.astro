@@ -189,9 +189,12 @@ import Quote from '../components/quote.astro';
 				<p>Thank you, Dr. Dolores Carr and staff. WONDERFUL PEOPLE.</p>
 				<p>Love, <br/>Regenia & Jackie Smith, 10th grade student</p>
 			</Testimony>
-			<div class="mt-5 text-center"><button class="btn-white" x-show="!open" @click="open = true">Read
-					More</button></div>
-			<div x-show="open">
+			<div class="mt-5 text-center">
+				<button class="btn-white" x-show="!open" x-on:click="open = true">
+					Read More
+				</button>
+			</div>
+			<div x-show="open" x-cloak>
 				<Testimony name="STARS" name="Rydell Payne" title="from STARS">
 					<img class="w-full max-w-lg mx-auto" src="assets/images/stars-logo.png" alt="STARS logo">
 					<p>
