@@ -1,8 +1,9 @@
 ---
-const cite = Astro.props;
+const { cite } = Astro.props;
 ---
 
 <blockquote class="text-gray-800">
+	{ cite &&
 	<p class="mb-0 italic">
 		<slot />
 	</p>
@@ -10,4 +11,5 @@ const cite = Astro.props;
 	<cite class="mt-0 font-semibold">
 		{cite}
 	</cite>
+	}
 </blockquote>
