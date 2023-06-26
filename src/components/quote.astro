@@ -3,13 +3,14 @@ const { cite } = Astro.props;
 ---
 
 <blockquote class="text-gray-800">
-	{ cite &&
-	<p class="mb-0 italic">
-		<slot />
-	</p>
-	-
-	<cite class="mt-0 font-semibold">
-		{cite}
-	</cite>
+	{ cite.length > 0 && <span>
+		<p class="mb-0 italic">
+			<slot />
+		</p>
+		-
+		<cite class="mt-0 font-semibold">
+			{cite}
+		</cite>
+	</span>
 	}
 </blockquote>
