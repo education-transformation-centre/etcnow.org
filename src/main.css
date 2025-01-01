@@ -1,68 +1,72 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+[x-cloak] {
+    display: none !important;
+}
 
 @layer base {
-  html {
-    font-size: 100%;
-  }
+    html {
+        font-size: 100%;
+    }
 
-  /*16px*/
+    /*16px*/
 
-  body {
-    background-image: url("/assets/images/background.png");
-    font-weight: 500;
-    line-height: 1.75;
-    color: #000000;
-    font-size: 18px;
-  }
+    body {
+        background-image: url('/assets/images/background.png');
+        font-weight: 500;
+        line-height: 1.75;
+        color: #000000;
+        font-size: 18px;
+    }
 
-  p {
-    margin-bottom: 1rem;
-  }
+    p {
+        margin-bottom: 1rem;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin: 3rem 0 1.38rem;
-    font-weight: 700;
-    line-height: 1.3;
-    text-transform: uppercase;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 3rem 0 1.38rem;
+        font-weight: 700;
+        line-height: 1.3;
+        text-transform: uppercase;
+    }
 
-  h1 {
-    margin-top: 0;
-    @apply text-4xl;
-  }
+    h1 {
+        margin-top: 0;
+        @apply text-4xl;
+    }
 
-  h2 {
-    @apply text-3xl;
-  }
+    h2 {
+        @apply text-3xl;
+    }
 
-  h3 {
-    @apply text-2xl;
-  }
+    h3 {
+        @apply text-2xl;
+    }
 
-  h4 {
-    @apply text-xl;
-  }
+    h4 {
+        @apply text-xl;
+    }
 
-  h5 {
-    @apply text-lg;
-  }
+    h5 {
+        @apply text-lg;
+    }
 }
 
 @layer components {
-  .container {
-    @apply max-w-4xl mx-auto px-7;
-  }
+    .container {
+        @apply max-w-4xl mx-auto px-7;
+    }
 
-  .btn {
-    @apply inline-block px-4 py-2 mb-2 font-bold text-white bg-green;
-  }
-  .btn-white {
-    @apply inline-block px-4 py-2 mb-2 font-bold text-black bg-white;
-  }
+    .btn {
+        @apply inline-block px-4 py-2 mb-2 font-bold text-white bg-green;
+    }
+    .btn-white {
+        @apply inline-block px-4 py-2 mb-2 font-bold text-black bg-white;
+    }
 }
