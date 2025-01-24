@@ -6,14 +6,6 @@
     html {
         font-size: 100%;
     }
-
-    body {
-        background-image: url('/assets/images/background.png');
-        font-weight: 500;
-        line-height: 1.75;
-        color: #000000;
-        font-size: 18px;
-    }
 }
 
 @layer components {
