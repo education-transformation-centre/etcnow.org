@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/images/logo.png';
+---
+
+<nav class="border-b-[.75rem] border-gray-200">
+    <div
+        class="container py-6 mx-auto flex justify-between items-center"
+    >
+        <a href="/">
+            <Image
+                class="h-24 w-auto"
+                src={logo}
+                alt="The Education Transformation Centre logo."
+            />
+        </a>
+        <ul class="flex items-center gap-10 text-xl">
+            <li><a href="/">Home</a></li>
+            <li><a href="TODO">Testimonies</a></li>
+            <li class="bg-green-600 py-2 px-5 text-white">
+                <a href="TODO">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
