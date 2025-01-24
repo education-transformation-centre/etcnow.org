@@ -4,7 +4,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Arial", "Helvetica", "sans-serif"],
+                sans: ["Metropolis", "sans-serif"],
+                serif: ["Merriweather", "sans-serif"],
             },
             fontSize: {
                 lg: "1.25rem",
@@ -20,6 +21,8 @@ module.exports = {
                 },
                 green: {
                     DEFAULT: "#4D9B4D",
+                    700: "#3B7E3B",
+                    800: "#2B502B",
                 },
             },
         },

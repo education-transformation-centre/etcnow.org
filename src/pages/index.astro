@@ -7,26 +7,59 @@ import classroomPhoto from '../assets/images/classroom.jpeg';
 ---
 
 <Main title="Education Transformation Centre" description="">
-    <section class="h-screen overflow-hidden relative">
+    <div
+        class="h-screen p-24 flex flex-col justify-center items-center"
+    >
         <Image
-            class="absolute inset-0 object-cover w-full h-full"
-            src={classroomPhoto}
-            alt="A photo of one of the Education Transformation Centre classroom."
+            class="max-w-md"
+            src={logo}
+            alt="The Education Transformation Centre logo."
         />
-        <div class="absolute inset-0 z-10 bg-green opacity-70"></div>
-        <div
-            class="absolute inset-0 z-20 flex flex-col items-center justify-center"
+        <p class="text-4xl max-w-prose mt-28 font-serif text-center">
+            We are an alternate education course, designed to prevent
+            encounters with the justice system and reduce frequent
+            instances of detention and suspension.
+        </p>
+    </div>
+    <ul class="h-screen flex flex-col">
+        <li
+            class="flex-auto flex flex-col justify-center bg-green py-20 px-60"
         >
-            <Image
-                class="max-w-xl"
-                src={logo}
-                alt="The Education Transformation Centre logo."
-            />
-            <p class="text-2xl text-center max-w-prose mt-24">
-                We are an alternate education course, designed to
-                prevent encounters with the justice system and reduce
-                frequent instances of detention and suspension.
+            <p class="text-white text-9xl font-bold font-sans">
+                Growth
             </p>
-        </div>
-    </section>
+            <p class="text-white mt-6 text-xl font-serif max-w-prose">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. In ante mi, gravida mollis pellentesque et,
+                pharetra nec erat. Suspendisse a commodo ipsum.
+                Phasellus nec lorem nisi.
+            </p>
+        </li>
+        <li
+            class="flex-auto flex flex-col justify-center bg-green-700 py-20 px-60"
+        >
+            <p class="text-white text-9xl font-bold font-sans">
+                Transformation
+            </p>
+            <p class="text-white mt-6 text-xl font-serif max-w-prose">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. In ante mi, gravida mollis pellentesque et,
+                pharetra nec erat. Suspendisse a commodo ipsum.
+                Phasellus nec lorem nisi.
+            </p>
+        </li>
+        <li
+            class="flex-auto flex flex-col justify-center bg-green-800 py-20 px-60"
+        >
+            <p class="text-white text-9xl font-bold font-sans">
+                Achievement
+            </p>
+            <p class="text-white mt-6 text-xl font-serif max-w-prose">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. In ante mi, gravida mollis pellentesque et,
+                pharetra nec erat. Suspendisse a commodo ipsum.
+                Phasellus nec lorem nisi.
+            </p>
+        </li>
+    </ul>
 </Main>
