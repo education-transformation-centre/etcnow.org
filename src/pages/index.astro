@@ -1,6 +1,7 @@
 ---
 import Main from '../layouts/Main.astro';
 import { Image } from 'astro:assets';
+import ThreeHeadingsSection from '../sections/ThreeHeadingsSection.astro';
 
 import logo from '../assets/images/logo.png';
 import classroomPhoto from '../assets/images/classroom.jpeg';
@@ -21,45 +22,5 @@ import classroomPhoto from '../assets/images/classroom.jpeg';
             instances of detention and suspension.
         </p>
     </div>
-    <ul class="h-screen flex flex-col">
-        <li
-            class="flex-auto flex flex-col justify-center bg-green py-20 px-60"
-        >
-            <p class="text-white text-9xl font-bold font-sans">
-                Growth
-            </p>
-            <p class="text-white mt-6 text-xl font-serif max-w-prose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. In ante mi, gravida mollis pellentesque et,
-                pharetra nec erat. Suspendisse a commodo ipsum.
-                Phasellus nec lorem nisi.
-            </p>
-        </li>
-        <li
-            class="flex-auto flex flex-col justify-center bg-green-700 py-20 px-60"
-        >
-            <p class="text-white text-9xl font-bold font-sans">
-                Transformation
-            </p>
-            <p class="text-white mt-6 text-xl font-serif max-w-prose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. In ante mi, gravida mollis pellentesque et,
-                pharetra nec erat. Suspendisse a commodo ipsum.
-                Phasellus nec lorem nisi.
-            </p>
-        </li>
-        <li
-            class="flex-auto flex flex-col justify-center bg-green-800 py-20 px-60"
-        >
-            <p class="text-white text-9xl font-bold font-sans">
-                Achievement
-            </p>
-            <p class="text-white mt-6 text-xl font-serif max-w-prose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. In ante mi, gravida mollis pellentesque et,
-                pharetra nec erat. Suspendisse a commodo ipsum.
-                Phasellus nec lorem nisi.
-            </p>
-        </li>
-    </ul>
+    <ThreeHeadingsSection />
 </Main>
