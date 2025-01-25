@@ -9,26 +9,37 @@ import CurriculumSection from '../sections/CurriculumSection.astro';
 
 // image imports
 import heroPhoto from '../assets/images/who-we-serve.jpg';
+import teamPhoto from '../assets/images/team.jpg';
 ---
 
 <Main title="Education Transformation Centre" description="">
     <div
-        class="relative min-h-[85vh] px-10 lg:px-24 flex flex-col justify-end items-center"
+        class="relative min-h-[85vh] px-10 lg:px-24 flex flex-col justify-center items-center"
     >
         <Image
             src={heroPhoto}
             alt="One of the Education Transformation Centre's classrooms."
             class="absolute -z-20 inset-0 w-full h-full object-cover"
         />
-        <p
-            class="text-2xl lg:text-5xl max-w-prose mt-28 font-serif text-center leading-relaxed bg-white p-10 mb-32"
-        >
-            We are an alternate education course, designed to prevent
-            encounters with the justice system and reduce frequent
-            instances of detention and suspension.
-        </p>
+        <div class="wrapper">
+            <p
+                class="text-2xl lg:text-5xl max-w-prose mt-28 font-sans text-center leading-relaxed lg:leading-relaxed bg-white bg-opacity-95 text-gray-800 p-10 mb-32"
+            >
+                We are an alternate education course, designed to
+                prevent encounters with the justice system and reduce
+                frequent instances of detention and suspension.
+            </p>
+        </div>
     </div>
     <ThreeHeadingsSection />
     <LearningEnvironmentSection />
     <CurriculumSection />
+    <div class="lg:px-24 py-10 lg:py-36">
+        <Image
+            src={teamPhoto}
+            alt=""
+            class="w-full h-[70vh] md:h-[80vh] object-cover"
+        />
+    </div>
+    <div class="h-96"></div>
 </Main>

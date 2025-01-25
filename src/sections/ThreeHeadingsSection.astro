@@ -30,12 +30,14 @@ const headings = [
                     heading.bgColor,
                 ]}
             >
-                <p class="text-white text-4xl md:text-6xl lg:text-9xl font-bold font-sans">
-                    {heading.title}
-                </p>
-                <p class="text-white mt-4 md:mt-5 lg:mt-6 lg:text-xl font-serif max-w-prose">
-                    {heading.description}
-                </p>
+                <div class="wrapper">
+                    <p class="text-white text-4xl md:text-6xl lg:text-9xl font-bold font-sans">
+                        {heading.title}
+                    </p>
+                    <p class="text-white mt-4 md:mt-5 lg:mt-6 lg:text-xl font-serif max-w-prose">
+                        {heading.description}
+                    </p>
+                </div>
             </li>
         ))
     }
