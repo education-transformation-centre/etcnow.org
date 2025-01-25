@@ -26,14 +26,14 @@ const headings = [
         headings.map((heading) => (
             <li
                 class:list={[
-                    'flex-auto flex flex-col justify-center py-20 px-60',
+                    'flex-auto flex flex-col justify-center py-10 px-8 md:py-16 md:px-14 lg:py-20 lg:px-60',
                     heading.bgColor,
                 ]}
             >
-                <p class="text-white text-9xl font-bold font-sans">
+                <p class="text-white text-4xl md:text-6xl lg:text-9xl font-bold font-sans">
                     {heading.title}
                 </p>
-                <p class="text-white mt-6 text-xl font-serif max-w-prose">
+                <p class="text-white mt-4 md:mt-5 lg:mt-6 lg:text-xl font-serif max-w-prose">
                     {heading.description}
                 </p>
             </li>
