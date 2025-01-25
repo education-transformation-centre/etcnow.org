@@ -1,0 +1,44 @@
+---
+const headings = [
+    {
+        title: 'Growth',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante mi, gravida mollis pellentesque et, pharetra nec erat. Suspendisse a commodo ipsum. Phasellus nec lorem nisi.',
+        bgColor: 'bg-green-500',
+    },
+    {
+        title: 'Transformation',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante mi, gravida mollis pellentesque et, pharetra nec erat. Suspendisse a commodo ipsum. Phasellus nec lorem nisi.',
+        bgColor: 'bg-green-700',
+    },
+    {
+        title: 'Achievement',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante mi, gravida mollis pellentesque et, pharetra nec erat. Suspendisse a commodo ipsum. Phasellus nec lorem nisi.',
+        bgColor: 'bg-green-900',
+    },
+];
+---
+
+<ul class="min-h-screen flex flex-col">
+    {
+        headings.map((heading) => (
+            <li
+                class:list={[
+                    'flex-auto flex flex-col justify-center py-10 px-8 md:py-16 md:px-14 lg:py-20 lg:px-60',
+                    heading.bgColor,
+                ]}
+            >
+                <div class="wrapper">
+                    <p class="text-white text-4xl md:text-6xl lg:text-9xl font-bold font-sans">
+                        {heading.title}
+                    </p>
+                    <p class="text-white mt-4 md:mt-5 lg:mt-6 lg:text-xl font-serif max-w-prose">
+                        {heading.description}
+                    </p>
+                </div>
+            </li>
+        ))
+    }
+</ul>

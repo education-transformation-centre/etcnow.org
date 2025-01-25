@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+
+// image imports
+import heroPhoto from '../assets/images/who-we-serve.jpg';
+---
+
+<div
+    class="relative min-h-[85vh] px-10 lg:px-24 flex flex-col justify-center items-center"
+>
+    <Image
+        src={heroPhoto}
+        alt="One of the Education Transformation Centre's classrooms."
+        class="absolute -z-20 inset-0 w-full h-full object-cover"
+    />
+    <div class="wrapper">
+        <p
+            class="text-2xl lg:text-5xl max-w-prose mt-28 font-sans text-center leading-relaxed lg:leading-relaxed bg-white bg-opacity-95 text-gray-800 p-10 mb-32"
+        >
+            We are an alternate education course, designed to prevent
+            encounters with the justice system and reduce frequent
+            instances of detention and suspension.
+        </p>
+    </div>
+</div>
