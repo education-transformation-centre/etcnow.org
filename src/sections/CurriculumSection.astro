@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import curriculumPhoto from '../assets/images/student-in-class.jpg';
+---
+
+<div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+            <div class="lg:pt-4 lg:pr-8">
+                <div class="lg:max-w-lg">
+                    <p
+                        class="mt-2 text-4xl font-semibold text-gray-900 sm:text-5xl"
+                    >
+                        Curriculum
+                    </p>
+                    <p class="mt-6 text-lg/8 text-gray-600">
+                        Our integrative and alternative education
+                        model is designed to eliminate the stigma of
+                        utilizing mental health services. Its seamless
+                        clinical learning model fosters emotional
+                        self-efficacy while building essential life
+                        skills.
+                    </p>
+                    <p class="mt-6 text-lg/8 text-gray-600">
+                        Collaboration with host schools will
+                        facilitate a bridge for a student's return
+                        full-time to the traditional setting once
+                        mental health goals are met or an intensive
+                        level of services are no longer needed.
+                    </p>
+                </div>
+            </div>
+            <Image
+                src={curriculumPhoto}
+                alt=""
+                class="w-[48rem] max-w-none sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            />
+        </div>
+    </div>
+</div>
