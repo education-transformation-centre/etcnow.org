@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import type { Testimony } from "../data/testimonies";
+
+interface Props {
+	testimony: Testimony;
+}
+
+const { testimony } = Astro.props;
+---
+
+{testimony.logo && (
+	<Image src={testimony.logo.src} alt={testimony.logo.alt} width={512} densities={[1, 2]} class="mb-6 h-auto w-full max-w-[512px]" />
+)}
+
+{testimony.paragraphs.map((paragraph) => <p class="whitespace-pre-line">{paragraph}</p>)}
+
+{testimony.gallery && (
+	<div class="mt-6 grid grid-cols-2 gap-4">
+		{testimony.gallery.map((image) => (
+			<a href={image.src.src} target="_blank" rel="noopener">
+				<Image src={image.src} alt={image.alt} widths={[340, 680]} sizes="(min-width: 768px) 340px, 45vw" class="h-auto w-full" />
+			</a>
+		))}
+	</div>
+)}

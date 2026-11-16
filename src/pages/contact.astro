@@ -1,0 +1,81 @@
+---
+import { actions } from "astro:actions";
+import Layout from "../layouts/Layout.astro";
+import ContactLinks from "../components/ContactLinks.astro";
+
+// Form actions need an on-demand rendered page: the POST is handled by this route.
+export const prerender = false;
+
+const result = Astro.getActionResult(actions.contact);
+
+// 303 so the browser re-requests the page with GET; a refresh re-posts nothing.
+if (result?.data?.ok) {
+	return Astro.redirect("/contact?sent=1", 303);
+}
+
+const sent = Astro.url.searchParams.has("sent");
+const failure = result?.data?.ok === false ? result.data : null;
+const errors = failure?.errors ?? {};
+const values = failure?.values;
+const formError = result?.error?.message ?? null;
+const errorFor = (name: string) => errors[name]?.[0];
+
+const inputClass =
+	"w-full rounded-[3px] border border-line bg-white px-4 py-3 text-base text-ink transition-[border-color,box-shadow] focus:border-brand focus:shadow-[0_0_2px_var(--color-brand)] focus:outline-none aria-[invalid]:border-red-700";
+const labelClass = "mb-2 block font-medium text-ink-strong";
+const errorClass = "mt-2 mb-0 text-sm font-medium text-red-700";
+---
+
+<Layout title="Contact" description="Contact the Education Transformation Centre by email, phone, or message.">
+	<section class="section">
+		<div class="wrap">
+			<h1 class="mb-5">Contact Us</h1>
+			<ContactLinks class="mb-7" />
+
+			<div class="max-w-[680px]">
+				{sent && (
+					<p role="status" class="mb-6 rounded-[3px] bg-emerald-100 px-6 py-4 font-medium text-emerald-700">Your message has been received!</p>
+				)}
+				{formError && (
+					<p role="alert" class="mb-6 rounded-[3px] bg-red-50 px-6 py-4 font-medium text-red-700">{formError}</p>
+				)}
+
+				<form method="POST" action={actions.contact} class="flex flex-col gap-4" novalidate>
+					<div>
+						<label for="name" class={labelClass}>Name <span class="text-red-700" aria-hidden="true">*</span></label>
+						<input id="name" name="name" type="text" autocomplete="name" required value={values?.name} class={inputClass}
+							aria-invalid={errorFor("name") ? "true" : undefined} aria-describedby={errorFor("name") ? "name-error" : undefined} />
+						{errorFor("name") && <p id="name-error" class={errorClass}>{errorFor("name")}</p>}
+					</div>
+					<div>
+						<label for="email" class={labelClass}>Email <span class="text-red-700" aria-hidden="true">*</span></label>
+						<input id="email" name="email" type="email" autocomplete="email" required value={values?.email} class={inputClass}
+							aria-invalid={errorFor("email") ? "true" : undefined} aria-describedby={errorFor("email") ? "email-error" : undefined} />
+						{errorFor("email") && <p id="email-error" class={errorClass}>{errorFor("email")}</p>}
+					</div>
+					<div>
+						<label for="message" class={labelClass}>Message <span class="text-red-700" aria-hidden="true">*</span></label>
+						<textarea id="message" name="message" rows="6" required class={inputClass}
+							aria-invalid={errorFor("message") ? "true" : undefined} aria-describedby={errorFor("message") ? "message-error" : undefined}>{values?.message}</textarea>
+						{errorFor("message") && <p id="message-error" class={errorClass}>{errorFor("message")}</p>}
+					</div>
+					<div class="hidden" aria-hidden="true">
+						<label for="bot-field">Leave this empty</label>
+						<input id="bot-field" name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+					</div>
+					<div>
+						<button type="submit" class="btn cursor-pointer border-0">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<script>
+	// Stop a double submit while the POST is in flight.
+	document.querySelector("form")?.addEventListener("submit", (event) => {
+		const button = (event.currentTarget as HTMLFormElement).querySelector("button[type=submit]");
+		button?.setAttribute("disabled", "");
+	});
+</script>

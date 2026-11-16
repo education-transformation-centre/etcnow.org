@@ -1,0 +1,141 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { site } from "../data/site";
+import hero from "../assets/hero.jpeg";
+import curriculum from "../assets/curriculum.jpeg";
+import founder from "../assets/dolores-carr.jpg";
+
+const pillars = [
+	{
+		title: "Growth",
+		bg: "bg-brand",
+		body: "The Education Transformation Center (ETC) is navigating several opportunities and challenges that shape its daily operations and overarching mission to change the trajectory of our student-patients' lives. Now that ETC is a Medicaid approved therapeutic facility, it is better positioned to serve students and families with economic means at and below the poverty level. Local referrals and community engagement are the lifeblood of the organization, and news of the success of ETC Return to School plans has reached beyond Albemarle borders and to the ears and schools of Buckingham, Fluvanna, Greene, and Louisa counties.",
+	},
+	{
+		title: "Transformation",
+		bg: "bg-brand-700",
+		body: "ETC Return to School Intensive Program, which is a cornerstone of ETC's therapeutic offerings. This 6 to 8-week comprehensive rehabilitation protocol is designed to address urgent cases of extreme behavior and disruption. Student will receive intensive intervention to swiftly mitigate agitation and disruption, triage interruptions, and collaboratively devise long-term strategies. The program's holistic approach combines applied therapeutics, skill-building, and education to yield effective behavior modification and management, ensuring students' successful reintegration into the academic environment.",
+	},
+	{
+		title: "Achievement",
+		bg: "bg-brand-900",
+		body: "The Education Transformation Centre has experienced significant progress in service delivery and administration over the past fiscal year. ETC provided emergency intervention services to three (3) clients within our target population and four (4) Emergency Return to Work Intensive standard interventions, and one (1) 6-week cycle of its summer enrichment program - all between July 2022 and June 2023. During that time, 80% of students assigned to ETC returned to school the current calendar year and completed their coursework and credits on time. Of the remaining 20% of students whose return to school plan included re-matriculating the next school year (Fall 2023), 100% are on track to do so and are re-registered for the semester. As a result of the ETC approach, all 18 students who participated in externships were offered full time or part-time work. 6 offers were accepted. In 2024, ETC’s enrichment program, ”Introduction to Technology. Whether it is an app, a game, a 3D element or otherwise, participants learn the process needed to bring their first tech idea to life. They also use Artificial Intelligence to help along the way and speed up the process of creation, allowing participants to work smarter and harder. At the end of this program, participants had a design in hand that they were proud to show to the world. Dream it. Design it. Create it. Welcome to the world of Tech!",
+	},
+];
+
+const licenses = [
+	"Virginia Department of Behavioral Health and Developmental Services",
+	"County of Albemarle Business",
+	"FY25 Albemarle CSA Provider Agreement",
+	"FY25 Charlottesville CSA Provider Agreement",
+];
+---
+
+<Layout>
+	<!-- Hero -->
+	<section class="section">
+		<div class="wrap grid items-center gap-8 lg:grid-cols-[3fr_2fr]">
+			<div>
+				<h1 class="mb-6">Empowering Growth, Transforming Lives, Achieving Success Together</h1>
+				<p class="mb-0">
+					The Education Transformation Center is a human services agency that endeavors to provide a therapeutic growth enhancing environment for adolescents with disabling conditions. Its atmosphere of “relaxed alertness” combines high challenge and high expectations in a low threat community staffed with professional helpers who foster growth and success. Its multisystemic model embraces a state of mind that combines confidence, competence and intrinsic motivation (Cainelearning.com).
+				</p>
+			</div>
+			<Image
+				src={hero}
+				alt="Students working together at the Education Transformation Centre"
+				widths={[480, 768, 1152]}
+				sizes="(min-width: 1024px) 40vw, 100vw"
+				loading="eager"
+				class="h-auto w-full"
+			/>
+		</div>
+	</section>
+
+	<!-- Growth, Transformation, Achievement -->
+	{pillars.map((pillar) => (
+		<section class:list={["section text-white", pillar.bg]}>
+			<div class="wrap">
+				<h2 class="mb-[18px] text-white">{pillar.title}</h2>
+				<p class="mb-0">{pillar.body}</p>
+			</div>
+		</section>
+	))}
+
+	<!-- Services, Our Team, Who We Serve -->
+	<section class="section">
+		<div class="wrap grid gap-8 md:grid-cols-3">
+			<div>
+				<h3 class="mb-3">Services</h3>
+				<p class="mb-3">Our therapeutic mental health services include mental health assessments, person-centered service planning, therapeutic activities, parent consultations/psycho-educational training, teacher collaboration and service/program evaluation.</p>
+				<p>We provides a therapeutic environment where students participate in psycho educational and counseling groups that supplement the traditional academic activities.</p>
+				<a href={site.counselingApplicationUrl} class="btn" target="_blank" rel="noopener">Counseling Application</a>
+			</div>
+			<div>
+				<h3 class="mb-3">Our Team</h3>
+				<p class="mb-3">Our integrative approach includes a team of educators, clinical mental health counselors, qualified mental health providers, parents, and community mentors.</p>
+			</div>
+			<div>
+				<h3 class="mb-3">Who We Serve</h3>
+				<p class="mb-3">Charlottesville City Public Schools, Counties of Albemarle, Buckingham, Fluvanna, Greene, Louisa, Nelson</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Curriculum -->
+	<section>
+		<div class="wrap">
+			<div class="relative overflow-hidden p-[50px]">
+				<Image src={curriculum} alt="" widths={[768, 1280, 1920]} sizes="100vw" class="absolute inset-0 size-full object-cover" />
+				<div class="absolute inset-0 bg-earth/85"></div>
+				<h2 class="relative mb-0 text-center text-white">Curriculum</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="wrap grid gap-8 md:grid-cols-2">
+			<div>
+				<h3 class="mb-3">Model</h3>
+				<p class="mb-0">Our integrative and alternative education model is designed to eliminate the stigma of utilizing mental health services. Its seamless clinical learning model fosters emotional self-efficacy while building essential life skills.</p>
+			</div>
+			<div>
+				<h3 class="mb-3">Outcomes</h3>
+				<p class="mb-0">Collaboration with host schools will facilitate a bridge for a student's return full-time to the traditional setting once mental health goals are met or an intensive level of services are no longer needed.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Meet the Founder -->
+	<section class="section">
+		<div class="wrap flex flex-col items-start gap-[78px] lg:flex-row lg:items-center">
+			<Image src={founder} alt="Dr. Dolores Carr" width={350} densities={[1, 2]} class="h-auto w-full max-w-[350px] rounded-xl" />
+			<div>
+				<h2 class="mb-3">Meet the Founder</h2>
+				<p class="mb-10">Dr. Dolores Carr is friendly, caring, and with over 20 years of public teaching, she has an overwhelming wealth of knowledge and experience in transforming student's lives.</p>
+				<figure class="m-0 border-l-4 border-brand bg-white px-[30px] py-[35px] shadow-[0_0_20px_0_rgb(0_0_0/0.1)] md:px-[55px] md:py-[45px]">
+					<svg class="mb-[15px] size-10 fill-[#e8e8e8]" viewBox="0 0 448 512" aria-hidden="true"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>
+					<blockquote class="m-0 text-lg">My goal is to assist students in finding their passion, then provide education options with choices matched for each individual student.</blockquote>
+					<figcaption class="mt-5 font-medium not-italic">Dr. Dolores Carr</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+
+	<!-- Funding Sources, Licenses -->
+	<section class="section">
+		<div class="wrap grid gap-8 md:grid-cols-2">
+			<div>
+				<h3 class="mb-3">Funding Sources</h3>
+				<p class="mb-0">We accept Medicaid, Child Services Act (CSA), Private Insurance, and Direct Payments.</p>
+			</div>
+			<div>
+				<h3 class="mb-3">Licenses</h3>
+				<ul class="m-0 list-disc ps-5 marker:text-brand">
+					{licenses.map((license) => <li class="ps-[15px] [&:not(:last-child)]:mb-[9px]">{license}</li>)}
+				</ul>
+			</div>
+		</div>
+	</section>
+</Layout>

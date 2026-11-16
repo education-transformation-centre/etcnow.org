@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Colours carried over from the WordPress (Breakdance) site. */
+@theme {
+	--color-brand: #4d9b4d;
+	--color-brand-700: #316431;
+	--color-brand-900: #244325;
+	/* Brown overlay on the Curriculum banner. */
+	--color-earth: #6c4d40;
+	/* Footer background. */
+	--color-sand: #dedad2;
+	--color-card: #f1f1f1;
+	--color-page: #f9fafb;
+	--color-ink: #374151;
+	--color-ink-strong: #111827;
+	--color-ink-muted: #6d6d6d;
+	--color-line: #d1d5db;
+
+	--font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+@layer base {
+	html {
+		-webkit-text-size-adjust: 100%;
+	}
+
+	body {
+		@apply bg-page text-ink font-sans text-base leading-relaxed antialiased;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply text-ink-strong font-bold mt-0 text-balance;
+		line-height: 1.15;
+	}
+
+	h1 {
+		font-size: clamp(2.5rem, 6vw, 3.2rem);
+	}
+
+	h2 {
+		font-size: clamp(2rem, 5vw, 2.8rem);
+	}
+
+	h3 {
+		font-size: 1.95rem;
+	}
+
+	h4 {
+		font-size: 1.56rem;
+	}
+
+	p {
+		@apply mt-0 mb-4;
+	}
+
+	a {
+		@apply text-brand;
+	}
+
+	img {
+		@apply max-w-full block;
+	}
+
+	::selection {
+		background: color-mix(in srgb, var(--color-brand) 25%, white);
+	}
+
+	:focus-visible {
+		outline: 3px solid var(--color-brand);
+		outline-offset: 3px;
+	}
+}
+
+@layer components {
+	.wrap {
+		@apply w-full mx-auto max-w-[100rem] px-7 md:px-12;
+	}
+
+	.section {
+		@apply py-[45px] md:py-[55px] xl:py-[85px];
+	}
+
+	.btn {
+		@apply inline-flex items-center justify-center rounded-[3px] bg-brand px-6 py-3.5 font-medium leading-none text-white no-underline transition-colors duration-300 hover:bg-brand-700 hover:text-white;
+	}
+}

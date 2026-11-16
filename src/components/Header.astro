@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+import { nav, site } from "../data/site";
+
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isActive = (href: string) => currentPath === href || (href === "/testimonies" && currentPath.startsWith("/testimony/"));
+---
+
+<header class="relative z-50 bg-white">
+	<div class="flex items-center justify-between gap-6 px-5 py-2.5 md:px-10">
+		<a href="/" aria-label={`${site.name} home`} class="my-2.5">
+			<Image src={logo} alt="" height={120} densities={[1, 2]} loading="eager" fetchpriority="high" class="h-[90px] w-auto md:h-[120px]" />
+		</a>
+
+		<nav class="hidden xl:block" aria-label="Primary">
+			<ul class="flex items-center gap-2">
+				{nav.map((item) => (
+					<li>
+						<a
+							href={item.href}
+							aria-current={isActive(item.href) ? "page" : undefined}
+							class="block px-4 py-3 text-xl text-ink-strong no-underline transition-colors hover:text-brand aria-[current=page]:text-brand"
+						>{item.label}</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+
+		<button
+			class="nav-toggle flex flex-col gap-[5px] p-2 xl:hidden"
+			aria-label="Open menu"
+			aria-expanded="false"
+			aria-controls="mobile-nav"
+		>
+			<span class="nav-bar h-[3px] w-7 rounded-full bg-ink-strong transition-transform duration-200"></span>
+			<span class="nav-bar h-[3px] w-7 rounded-full bg-ink-strong transition-opacity duration-200"></span>
+			<span class="nav-bar h-[3px] w-7 rounded-full bg-ink-strong transition-transform duration-200"></span>
+		</button>
+	</div>
+
+	<nav id="mobile-nav" class="absolute inset-x-0 top-full hidden border-t border-line bg-white shadow-lg xl:!hidden" aria-label="Primary">
+		<ul>
+			{nav.map((item) => (
+				<li>
+					<a
+						href={item.href}
+						aria-current={isActive(item.href) ? "page" : undefined}
+						class="block border-b border-line px-6 py-4 text-lg text-ink-strong no-underline aria-[current=page]:text-brand"
+					>{item.label}</a>
+				</li>
+			))}
+		</ul>
+	</nav>
+</header>
+
+<script>
+	const toggle = document.querySelector<HTMLButtonElement>(".nav-toggle");
+	const menu = document.getElementById("mobile-nav");
+	const bars = toggle?.querySelectorAll(".nav-bar");
+
+	function setOpen(open: boolean) {
+		toggle?.setAttribute("aria-expanded", String(open));
+		toggle?.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+		menu?.classList.toggle("hidden", !open);
+		bars?.[0].classList.toggle("translate-y-2", open);
+		bars?.[0].classList.toggle("rotate-45", open);
+		bars?.[1].classList.toggle("opacity-0", open);
+		bars?.[2].classList.toggle("-translate-y-2", open);
+		bars?.[2].classList.toggle("-rotate-45", open);
+	}
+
+	toggle?.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+	document.addEventListener("keydown", (event) => {
+		if (event.key === "Escape" && toggle?.getAttribute("aria-expanded") === "true") {
+			setOpen(false);
+			toggle.focus();
+		}
+	});
+</script>
