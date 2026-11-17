@@ -5,51 +5,61 @@ import { nav, site } from "../data/site";
 
 const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
 const isActive = (href: string) => currentPath === href || (href === "/testimonies" && currentPath.startsWith("/testimony/"));
+
+// As on the live site, the last item ("Contact Us") is a button and the others are plain links.
+const links = nav.slice(0, -1);
+const cta = nav[nav.length - 1];
 ---
 
-<header class="relative z-50 bg-white">
-	<div class="flex items-center justify-between gap-6 px-5 py-2.5 md:px-10">
+<header class="relative z-50 bg-page">
+	<div class="flex items-center justify-between gap-5 px-10 py-2.5">
 		<a href="/" aria-label={`${site.name} home`} class="my-2.5">
-			<Image src={logo} alt="" height={120} densities={[1, 2]} loading="eager" fetchpriority="high" class="h-[90px] w-auto md:h-[120px]" />
+			<Image src={logo} alt="" height={120} densities={[1, 2]} loading="eager" fetchpriority="high" class="h-[120px] w-auto" />
 		</a>
 
 		<nav class="hidden xl:block" aria-label="Primary">
-			<ul class="flex items-center gap-2">
-				{nav.map((item) => (
+			<ul class="flex items-center">
+				{links.map((item) => (
 					<li>
 						<a
 							href={item.href}
 							aria-current={isActive(item.href) ? "page" : undefined}
-							class="block px-4 py-3 text-xl text-ink-strong no-underline transition-colors hover:text-brand aria-[current=page]:text-brand"
+							class="block p-5 text-xl leading-none font-medium text-ink-strong no-underline"
 						>{item.label}</a>
 					</li>
 				))}
+				<li class="ms-[15px]">
+					<a href={cta.href} aria-current={isActive(cta.href) ? "page" : undefined} class="btn text-xl">{cta.label}</a>
+				</li>
 			</ul>
 		</nav>
 
 		<button
-			class="nav-toggle flex flex-col gap-[5px] p-2 xl:hidden"
+			class="nav-toggle flex size-8 cursor-pointer flex-col justify-center gap-[5px] xl:hidden"
 			aria-label="Open menu"
 			aria-expanded="false"
 			aria-controls="mobile-nav"
 		>
-			<span class="nav-bar h-[3px] w-7 rounded-full bg-ink-strong transition-transform duration-200"></span>
-			<span class="nav-bar h-[3px] w-7 rounded-full bg-ink-strong transition-opacity duration-200"></span>
-			<span class="nav-bar h-[3px] w-7 rounded-full bg-ink-strong transition-transform duration-200"></span>
+			<span class="nav-bar h-[3px] w-8 rounded-full bg-ink-strong transition-transform duration-200"></span>
+			<span class="nav-bar h-[3px] w-8 rounded-full bg-ink-strong transition-opacity duration-200"></span>
+			<span class="nav-bar h-[3px] w-8 rounded-full bg-ink-strong transition-transform duration-200"></span>
 		</button>
 	</div>
 
-	<nav id="mobile-nav" class="absolute inset-x-0 top-full hidden border-t border-line bg-white shadow-lg xl:!hidden" aria-label="Primary">
+	<nav id="mobile-nav" class="absolute inset-x-0 top-[145px] hidden bg-white xl:!hidden" aria-label="Primary">
 		<ul>
-			{nav.map((item) => (
+			{links.map((item) => (
 				<li>
 					<a
 						href={item.href}
 						aria-current={isActive(item.href) ? "page" : undefined}
-						class="block border-b border-line px-6 py-4 text-lg text-ink-strong no-underline aria-[current=page]:text-brand"
+						class="block border-t border-[#eee] p-5 text-xl leading-none font-medium text-ink-strong no-underline"
 					>{item.label}</a>
 				</li>
 			))}
+			<li class="border-y border-[#eee] px-[15px] py-2.5">
+				<a href={cta.href} aria-current={isActive(cta.href) ? "page" : undefined} class="btn w-full text-xl">{cta.label}</a>
+			</li>
 		</ul>
 	</nav>
 </header>
