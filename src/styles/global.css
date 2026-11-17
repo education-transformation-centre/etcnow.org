@@ -37,7 +37,7 @@
 	h2,
 	h3,
 	h4 {
-		@apply text-ink-strong font-bold mt-0 text-balance;
+		@apply text-ink-strong font-bold mt-0;
 		line-height: 1.3em;
 	}
 
