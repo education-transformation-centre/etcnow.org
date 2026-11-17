@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import type { Testimony } from "../data/testimonies";
+
+interface Props {
+	testimony: Testimony;
+}
+
+const { testimony } = Astro.props;
+---
+
+{testimony.photo && (
+	<Image
+		src={testimony.photo.src}
+		alt={testimony.photo.alt}
+		width={64}
+		height={64}
+		densities={[1, 2]}
+		class="mb-4 size-16 rounded-full object-cover object-top"
+	/>
+)}

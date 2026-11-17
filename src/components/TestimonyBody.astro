@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import type { Testimony } from "../data/testimonies";
+
+interface Props {
+	testimony: Testimony;
+	/**
+	 * `page` copies the live single-testimony template, whose post content sits in a
+	 * flex column so paragraph margins add up (32px apart) instead of collapsing.
+	 */
+	variant?: "card" | "page";
+}
+
+const { testimony, variant = "card" } = Astro.props;
+---
+
+<div class:list={[variant === "page" ? "flex flex-col items-start [&>*]:my-4 [&>*:first-child]:mt-0" : "[&>*:last-child]:mb-0"]}>
+	{testimony.logo && (
+		<Image src={testimony.logo.src} alt={testimony.logo.alt} width={300} densities={[1, 2]} class="mb-4 h-auto w-full max-w-[300px]" />
+	)}
+
+	{testimony.paragraphs.map((paragraph) => <p class="whitespace-pre-line">{paragraph}</p>)}
+
+	{testimony.gallery && (
+		<div class="grid w-full gap-8 min-[782px]:grid-cols-2">
+			{testimony.gallery.map((image) => (
+				<a href={image.src.src} target="_blank" rel="noopener">
+					<Image src={image.src} alt={image.alt} widths={[340, 680]} sizes="(min-width: 782px) 50vw, 100vw" class="h-auto w-full" />
+				</a>
+			))}
+		</div>
+	)}
+</div>

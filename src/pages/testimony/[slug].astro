@@ -1,0 +1,21 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+import TestimonyBody from "../../components/TestimonyBody.astro";
+import { testimonies, type Testimony } from "../../data/testimonies";
+
+export const getStaticPaths = (() =>
+	testimonies.map((testimony) => ({ params: { slug: testimony.slug }, props: { testimony } }))) satisfies GetStaticPaths;
+
+const { testimony } = Astro.props as { testimony: Testimony };
+---
+
+<Layout title={testimony.name} description={testimony.paragraphs[0]}>
+	<section class="section">
+		<div class="wrap">
+			<h1 class="mb-6">{testimony.name}</h1>
+			<TestimonyBody testimony={testimony} variant="page" />
+			<p class="mt-10 mb-0"><a href="/testimonies">← All testimonies</a></p>
+		</div>
+	</section>
+</Layout>
