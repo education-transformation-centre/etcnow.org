@@ -16,6 +16,9 @@
 	--color-ink-muted: #6d6d6d;
 	--color-line: #d1d5db;
 
+	/* Breakdance stacks columns and collapses the menu below 1120px, so `xl` is 1120px here. */
+	--breakpoint-xl: 70rem;
+
 	--font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
@@ -25,7 +28,9 @@
 	}
 
 	body {
-		@apply bg-page text-ink font-sans text-base leading-relaxed antialiased;
+		@apply bg-page text-ink font-sans text-base antialiased;
+		/* `em`, as on the live site: it resolves to 27.2px and children inherit that. */
+		line-height: 1.7em;
 	}
 
 	h1,
@@ -33,23 +38,24 @@
 	h3,
 	h4 {
 		@apply text-ink-strong font-bold mt-0 text-balance;
-		line-height: 1.15;
+		line-height: 1.3em;
 	}
 
+	/* Breakdance's type scale: fixed sizes at every width. */
 	h1 {
-		font-size: clamp(2.5rem, 6vw, 3.2rem);
+		font-size: 3.5rem;
 	}
 
 	h2 {
-		font-size: clamp(2rem, 5vw, 2.8rem);
+		font-size: 2.8rem;
 	}
 
 	h3 {
-		font-size: 1.95rem;
+		font-size: 1.953125rem;
 	}
 
 	h4 {
-		font-size: 1.56rem;
+		font-size: 1.5625rem;
 	}
 
 	p {
@@ -84,6 +90,6 @@
 	}
 
 	.btn {
-		@apply inline-flex items-center justify-center rounded-[3px] bg-brand px-6 py-3.5 font-medium leading-none text-white no-underline transition-colors duration-300 hover:bg-brand-700 hover:text-white;
+		@apply inline-flex items-center justify-center rounded-[3px] border border-transparent bg-brand px-6 py-3.5 font-medium leading-none text-white no-underline transition-colors duration-300 hover:text-white;
 	}
 }
