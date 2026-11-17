@@ -21,8 +21,8 @@ const formError = result?.error?.message ?? null;
 const errorFor = (name: string) => errors[name]?.[0];
 
 const inputClass =
-	"w-full rounded-[3px] border border-line bg-white px-4 py-3 text-base text-ink transition-[border-color,box-shadow] focus:border-brand focus:shadow-[0_0_2px_var(--color-brand)] focus:outline-none aria-[invalid]:border-red-700";
-const labelClass = "mb-2 block font-medium text-ink-strong";
+	"block w-full rounded-[3px] border border-line bg-white px-4 py-3 text-base text-ink transition-[border-color,box-shadow] focus:border-brand focus:shadow-[0_0_2px_var(--color-brand)] focus:outline-none aria-[invalid]:border-red-700";
+const labelClass = "mb-2 block leading-none font-medium text-ink-strong";
 const errorClass = "mt-2 mb-0 text-sm font-medium text-red-700";
 ---
 
@@ -42,20 +42,20 @@ const errorClass = "mt-2 mb-0 text-sm font-medium text-red-700";
 
 				<form method="POST" action={actions.contact} class="flex flex-col gap-4" novalidate>
 					<div>
-						<label for="name" class={labelClass}>Name <span class="text-red-700" aria-hidden="true">*</span></label>
-						<input id="name" name="name" type="text" autocomplete="name" required value={values?.name} class={inputClass}
+						<label for="name" class={labelClass}>Name<span class="ps-1 text-red-700" aria-hidden="true">*</span></label>
+						<input id="name" name="name" type="text" autocomplete="name" required value={values?.name} class:list={[inputClass, "leading-none"]}
 							aria-invalid={errorFor("name") ? "true" : undefined} aria-describedby={errorFor("name") ? "name-error" : undefined} />
 						{errorFor("name") && <p id="name-error" class={errorClass}>{errorFor("name")}</p>}
 					</div>
 					<div>
-						<label for="email" class={labelClass}>Email <span class="text-red-700" aria-hidden="true">*</span></label>
-						<input id="email" name="email" type="email" autocomplete="email" required value={values?.email} class={inputClass}
+						<label for="email" class={labelClass}>Email<span class="ps-1 text-red-700" aria-hidden="true">*</span></label>
+						<input id="email" name="email" type="email" autocomplete="email" required value={values?.email} class:list={[inputClass, "leading-none"]}
 							aria-invalid={errorFor("email") ? "true" : undefined} aria-describedby={errorFor("email") ? "email-error" : undefined} />
 						{errorFor("email") && <p id="email-error" class={errorClass}>{errorFor("email")}</p>}
 					</div>
 					<div>
-						<label for="message" class={labelClass}>Message <span class="text-red-700" aria-hidden="true">*</span></label>
-						<textarea id="message" name="message" rows="6" required class={inputClass}
+						<label for="message" class={labelClass}>Message<span class="ps-1 text-red-700" aria-hidden="true">*</span></label>
+						<textarea id="message" name="message" required class:list={[inputClass, "h-[100px] leading-[1.4]"]}
 							aria-invalid={errorFor("message") ? "true" : undefined} aria-describedby={errorFor("message") ? "message-error" : undefined}>{values?.message}</textarea>
 						{errorFor("message") && <p id="message-error" class={errorClass}>{errorFor("message")}</p>}
 					</div>
