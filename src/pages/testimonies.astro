@@ -11,9 +11,9 @@ import { testimonies } from "../data/testimonies";
 			<h1 class="mb-8">Testimonies</h1>
 			<div class="flex max-w-[720px] flex-col gap-8">
 				{testimonies.map((testimony) => (
-					<article id={testimony.slug} class="bg-card p-6 md:p-8">
+					<article id={testimony.slug} class="bg-card p-5">
 						<Avatar testimony={testimony} />
-						<h2 class="mb-2 text-[1.56rem]">{testimony.name}</h2>
+						<h2 class="mb-2 text-[1.5625rem]">{testimony.name}</h2>
 						<TestimonyBody testimony={testimony} />
 					</article>
 				))}
