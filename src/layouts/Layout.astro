@@ -27,6 +27,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://etcnow.org"
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link rel="apple-touch-icon" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="robots" content="max-image-preview:large" />
 
 		<title>{fullTitle}</title>
 		<meta name="description" content={description} />
