@@ -16,12 +16,16 @@ export default defineConfig({
 			{ protocol: "https", hostname: "etcnow.org" },
 			{ protocol: "https", hostname: "www.etcnow.org" },
 			{ protocol: "https", hostname: "**.up.railway.app" },
+			// The dev server from compose.yaml, behind Caddy in ~/infra.
+			{ protocol: "https", hostname: "etc-website.puremint.xyz" },
 		],
 	},
 
 	server: {
 		port: 4321,
 		host: true,
+		// Previewed through Caddy at etc-website.puremint.xyz, so accept that Host header.
+		allowedHosts: true,
 	},
 
 	vite: {
