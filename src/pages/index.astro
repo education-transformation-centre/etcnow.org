@@ -25,7 +25,7 @@ const pillars = [
 ];
 
 const licenses = [
-	"Virginia Department of Behavioral Health and Developmental Services",
+	"Virginia Department of Behavioral Health and\nDevelopmental Services",
 	"County of Albemarle Business",
 	"FY25 Albemarle CSA Provider Agreement",
 	"FY25 Charlottesville CSA Provider Agreement",
@@ -35,9 +35,9 @@ const licenses = [
 <Layout>
 	<!-- Hero -->
 	<section class="section">
-		<div class="wrap grid items-center gap-8 lg:grid-cols-[3fr_2fr]">
-			<div>
-				<h1 class="mb-6">Empowering Growth, Transforming Lives, Achieving Success Together</h1>
+		<div class="wrap grid gap-8 xl:grid-cols-[calc(60%-40px)_calc(40%-40px)] xl:gap-20">
+			<div class="self-center">
+				<h1 class="mb-6 text-[2.5rem] md:text-[3.2rem]">Empowering Growth, Transforming Lives, Achieving Success Together</h1>
 				<p class="mb-0">
 					The Education Transformation Center is a human services agency that endeavors to provide a therapeutic growth enhancing environment for adolescents with disabling conditions. Its atmosphere of “relaxed alertness” combines high challenge and high expectations in a low threat community staffed with professional helpers who foster growth and success. Its multisystemic model embraces a state of mind that combines confidence, competence and intrinsic motivation (Cainelearning.com).
 				</p>
@@ -46,9 +46,9 @@ const licenses = [
 				src={hero}
 				alt="Students working together at the Education Transformation Centre"
 				widths={[480, 768, 1152]}
-				sizes="(min-width: 1024px) 40vw, 100vw"
+				sizes="(min-width: 1120px) 40vw, 100vw"
 				loading="eager"
-				class="h-auto w-full"
+				class="aspect-[4/3] w-full self-start rounded-xl object-cover"
 			/>
 		</div>
 	</section>
@@ -65,12 +65,12 @@ const licenses = [
 
 	<!-- Services, Our Team, Who We Serve -->
 	<section class="section">
-		<div class="wrap grid gap-8 md:grid-cols-3">
+		<div class="wrap grid gap-8 xl:grid-cols-3">
 			<div>
 				<h3 class="mb-3">Services</h3>
 				<p class="mb-3">Our therapeutic mental health services include mental health assessments, person-centered service planning, therapeutic activities, parent consultations/psycho-educational training, teacher collaboration and service/program evaluation.</p>
-				<p>We provides a therapeutic environment where students participate in psycho educational and counseling groups that supplement the traditional academic activities.</p>
-				<a href={site.counselingApplicationUrl} class="btn" target="_blank" rel="noopener">Counseling Application</a>
+				<p class="mb-2.5">We provides a therapeutic environment where students participate in psycho educational and counseling groups that supplement the traditional academic activities.</p>
+				<a href={site.counselingApplicationUrl} class="underline">Counseling Application</a>
 			</div>
 			<div>
 				<h3 class="mb-3">Our Team</h3>
@@ -89,13 +89,13 @@ const licenses = [
 			<div class="relative overflow-hidden p-[50px]">
 				<Image src={curriculum} alt="" widths={[768, 1280, 1920]} sizes="100vw" class="absolute inset-0 size-full object-cover" />
 				<div class="absolute inset-0 bg-earth/85"></div>
-				<h2 class="relative mb-0 text-center text-white">Curriculum</h2>
+				<h2 class="relative mb-0 text-white">Curriculum</h2>
 			</div>
 		</div>
 	</section>
 
 	<section class="section">
-		<div class="wrap grid gap-8 md:grid-cols-2">
+		<div class="wrap grid gap-8 xl:grid-cols-2">
 			<div>
 				<h3 class="mb-3">Model</h3>
 				<p class="mb-0">Our integrative and alternative education model is designed to eliminate the stigma of utilizing mental health services. Its seamless clinical learning model fosters emotional self-efficacy while building essential life skills.</p>
@@ -115,9 +115,9 @@ const licenses = [
 				<h2 class="mb-3">Meet the Founder</h2>
 				<p class="mb-10">Dr. Dolores Carr is friendly, caring, and with over 20 years of public teaching, she has an overwhelming wealth of knowledge and experience in transforming student's lives.</p>
 				<figure class="m-0 border-l-4 border-brand bg-white px-[30px] py-[35px] shadow-[0_0_20px_0_rgb(0_0_0/0.1)] md:px-[55px] md:py-[45px]">
-					<svg class="mb-[15px] size-10 fill-[#e8e8e8]" viewBox="0 0 448 512" aria-hidden="true"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></svg>
-					<blockquote class="m-0 text-lg">My goal is to assist students in finding their passion, then provide education options with choices matched for each individual student.</blockquote>
-					<figcaption class="mt-5 font-medium not-italic">Dr. Dolores Carr</figcaption>
+					<svg class="mb-[15px] size-10 fill-[#e8e8e8]" viewBox="0 0 32 32" aria-hidden="true"><path d="M7.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.357-0.056 0.724-0.086 1.097-0.086zM25.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.358-0.056 0.724-0.086 1.097-0.086z"/></svg>
+					<blockquote class="m-0 text-[24px] italic">My goal is to assist students in finding their passion, then provide education options with choices matched for each individual student.</blockquote>
+					<figcaption class="mt-5 text-[1.8rem]">Dr. Dolores Carr</figcaption>
 				</figure>
 			</div>
 		</div>
@@ -125,7 +125,7 @@ const licenses = [
 
 	<!-- Funding Sources, Licenses -->
 	<section class="section">
-		<div class="wrap grid gap-8 md:grid-cols-2">
+		<div class="wrap grid gap-8 xl:grid-cols-2">
 			<div>
 				<h3 class="mb-3">Funding Sources</h3>
 				<p class="mb-0">We accept Medicaid, Child Services Act (CSA), Private Insurance, and Direct Payments.</p>
@@ -133,7 +133,7 @@ const licenses = [
 			<div>
 				<h3 class="mb-3">Licenses</h3>
 				<ul class="m-0 list-disc ps-5 marker:text-brand">
-					{licenses.map((license) => <li class="ps-[15px] [&:not(:last-child)]:mb-[9px]">{license}</li>)}
+					{licenses.map((license) => <li class="ps-[15px] whitespace-pre-line [&:not(:last-child)]:mb-[9px]">{license}</li>)}
 				</ul>
 			</div>
 		</div>
